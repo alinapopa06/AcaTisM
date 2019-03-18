@@ -1,57 +1,51 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <link rel="stylesheet" href="style.css">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Proiecte</title>
-    </head>
-    <body>
-        <header class="menu">   
-              <div id="siglafii">
-                <img id="fii" src="fii.png">
-              </div>
-              <div class="menubutton">
-                    <a href="#" class="btn">Home</a>
-                    <a href="#" class="btn">Proiecte</a>
-                    <a href="#" class="btn">Etape</a>
-                    <a href="#" class="btn">Contact</a>
-              </div>
-              <div id="siglauniv">
-                <img id="univ" src="UNIV1.png">
-              </div>
-        </header>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Etape</title>
+  </head>
+  <body>
+    <nav class="menu">   
+            <img id="fii"src="fii.png">
+                <a href="#" >Acasa</a>
+                <a href="#"class="active">Proiecte</a>
+                <a href="#"  >Etape</a>
+                <a href="#" >Contact</a>
+            <img id="univ"src="UNIV1.png">
+    </nav>
         <div class="content">
             <h1>Proiectele mele</h1>
             <p>
                 <ol>
-                    <li id="parent">
+                    <li class="parent">
                         Academic Thesis Manager - Stefan Bolota
-                            <div id="hover-content">
+                            <div class="hover-content">
                                 Sa se realizeze o aplicatie Web privind managementul tezelor de licenta/master la nivelul unei facultati.
                             </div>
                     </li>
-                    <li id="parent">
+                    <li class="parent">
                         Web App Security Alerter
-                            <div id="hover-content">
+                            <div class="hover-content">
                                 Sa se realizeze un sistem capabil sa trimita alerte in timp-real despre noile vulnerabilitati software pentru o clasa de aplicatii.
                             </div>
                     </li>
-                    <li id="parent">
+                    <li class="parent">
                         Crisis Containment Service
-                            <div id="hover-content">
+                            <div class="hover-content">
                                 Sa se dezvolte o platforma Web care permite gestionarea situatiilor de urgenta.
                             </div>
                     </li>
-                    <li id="parent">
+                    <li class="parent">
                          HTTPcafe
-                            <div id="hover-content">
+                            <div class="hover-content">
                                 Sa se implementeze o aplicatie Web care simuleaza o cafenea destinata in special studentilor informaticieni.
                             </div>
                     </li>
-                    <li id="parent">
+                    <li class="parent">
                         Kid Monitor
-                            <div id="hover-content">
+                            <div class="hover-content">
                                 Sa se implementeze un sistem Web de monitorizare in timp real a unui copil sau grup de copii.
                             </div>
                     </li>
@@ -59,16 +53,25 @@
             <h2>Proiecte propuse</h2>
             <p>
                 <ul>
-                        <li id="parent">
-                                Clothes Shop Management System - Alina Popa
-                                    <div id="hover-content">
-                                            Sa se dezvolte o aplicatie client/server care sa ofere functionalitatea unui magazin online de produse.
-                                            <button>
-                                                Alegeti
-                                            </button>
+                        <li class="parent">
+                                Garbage Management System - Stefan Bolota
+                                    <div class="hover-content">
+                                            Sa se dezvolte o aplicatie care sa ofere functionalitatea unui sistem de strangere a gunoaielor.
                                     </div>
                             </li>
+                            <li class="parent">
+                                Clothes Shop Management System - Alina Popa
+                                    <div class="hover-content">
+                                            Sa se dezvolte o aplicatie client/server care sa ofere functionalitatea unui magazin online de produse.
+                                    </div>
+                            </li>
+                            
                 </ul>
+                <select class="drop">
+                    <option value="Clothes Shop Management System">Clothes Shop Management System</option>
+                    <option value="Garbage Management System">Garbage Management System</option>
+
+                  </select>
             </p>
         </div>
     </body>
