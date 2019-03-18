@@ -58,7 +58,7 @@ button:hover {
 }
 
  body {
-    background-image: url("log4.jpg");
+    background-image: url("/Resources/log4.jpg");
     background-repeat: no-repeat;
     background-position: bottom;
     background-attachment: fixed;
