@@ -1,0 +1,119 @@
+.menu {
+	display: grid;
+  grid-template-columns: 15% 17.5% 17.5% 17.5% 17.5% 15%;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 60px;
+  margin: auto;
+  align-items: center;
+  background-color: #2c3e50;
+  position: sticky;
+  top:0;
+}
+.menu a{
+	text-align: center;
+}
+#fii
+{
+	padding-left: 20px;
+	width: 50%;
+}
+#univ{
+	width: 70%;
+	padding-left: 30px;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 1em;
+  }
+a.active {
+  background-color: #e74c3c;
+}
+.menu a:hover {
+  background-color: gray;
+}
+
+.hover-content {
+  display:none;
+}
+.parent:hover .hover-content {
+  display:block;
+  color: #737373;
+}
+#parent1
+{
+    text-decoration: line-through;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'PT Sans', Arial, Verdana;
+  background-color: #eee;
+}
+
+.drop
+{
+  margin-left:30px;
+}
+
+.content
+  {
+    background-color: #d9d9d9;
+    border-radius: 15px;
+    margin: 5px;
+  }
+
+ 
+.grid-container {
+  display: grid;
+  grid-template-columns: 0.5fr 1.5fr 0.5fr 1.5fr 0.5fr;
+  grid-template-rows: 1fr 2fr 1fr 0.5fr 0.5fr 1fr;
+  grid-template-areas: ". . . . ." ". g . h ." ". g . h ." ". . . . ." ". Dropdown Dropdown Dropdown ." ". . . . .";
+}
+
+.g {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 0.7fr 1fr;
+  grid-template-areas: "nume" "continut";
+  grid-area: g;
+}
+
+.nume { grid-area: nume; }
+
+.continut { grid-area: continut;
+ }
+
+
+.h {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 0.7fr 1fr;
+  grid-template-areas: "nume1" "continut1";
+  grid-area: h;
+}
+
+.nume1 { grid-area: nume1; }
+
+.continut1 { grid-area: continut1; 
+}
+
+.Dropdown {
+  display: grid;
+  grid-template-columns: 2fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: "list Buton";
+  grid-area: Dropdown;
+}
+
+.list { grid-area: list;
+text-align: center;}
+
