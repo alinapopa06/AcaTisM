@@ -41,11 +41,13 @@ a.active {
 }
 .parent:hover .hover-content {
   display:block;
-  color: #737373;
+  color: 	#000;
 }
 
 .parent{
   font-size:15pt;
+  color: #113150;
+  font-style: italic;
 }
 
 html, body {
@@ -75,14 +77,15 @@ body {
   padding-top:1%;
   padding-bottom:1%;
 padding-left:2%;
-border-style: groove;
 border-color: #000;
-border-width: 1px;
+border-radius:15px;
 font-size:20pt;
+background-image: linear-gradient(to left, rgba(255,0,0,0), #e2766a);;
 }
 
 .continut
 {
+  background-color: 	rgb(144, 170, 205);
   padding-top:1%;
   padding-bottom:1%;
 padding-left:2%;
@@ -90,7 +93,12 @@ padding-right:2%;
 text-indent: 4%;
 text-align:justify;
 margin-bottom: 2%;
-border-style: groove;
 border-color: black;
-border-width: 1px;
+border-radius:15px;
+}
+
+#text
+{
+  width: 365px;
+height: 150px;
 }

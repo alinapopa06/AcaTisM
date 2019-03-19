@@ -1,6 +1,16 @@
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'PT Sans', Arial, Verdana;
+  background-color: #eee;
+}
+
 .menu {
 	display: grid;
-  grid-template-columns: 15% 17.5% 17.5% 17.5% 17.5% 15%;
+  grid-template-columns: 15% 14% 14% 14% 14% 14% 15%;
   margin: 0;
   padding: 0;
   width: 100%;
@@ -11,14 +21,17 @@
   position: sticky;
   top:0;
 }
+
 .menu a{
 	text-align: center;
 }
+
 #fii
 {
 	padding-left: 20px;
 	width: 50%;
 }
+
 #univ{
 	width: 70%;
 	padding-left: 30px;
@@ -30,9 +43,11 @@ a {
     font-size: 18px;
     padding: 1em;
   }
+
 a.active {
   background-color: #e74c3c;
 }
+
 .menu a:hover {
   background-color: gray;
 }
@@ -40,23 +55,15 @@ a.active {
 .hover-content {
   display:none;
 }
+
 .parent:hover .hover-content {
   display:block;
-  color: #737373;
+  color:white;
 }
+
 #parent1
 {
     text-decoration: line-through;
-}
-
-html, body {
-  margin: 0;
-  padding: 0;
-}
-
-body {
-  font-family: 'PT Sans', Arial, Verdana;
-  background-color: #eee;
 }
 
 .drop
@@ -65,11 +72,11 @@ body {
 }
 
 .content
-  {
-    background-color: #d9d9d9;
-    border-radius: 15px;
-    margin: 5px;
-  }
+{
+  background-color: #d9d9d9;
+  border-radius: 15px;
+  margin: 5px;
+}
 
  
 .grid-container {
@@ -85,13 +92,20 @@ body {
   grid-template-rows: 0.7fr 1fr;
   grid-template-areas: "nume" "continut";
   grid-area: g;
+  border: 1px solid #000;
+  border-radius:15px;
+  background-color:	#5b85ae;
 }
 
-.nume { grid-area: nume; }
+.nume { grid-area: nume;
+  padding-left:15%;
+  
+}
 
 .continut { grid-area: continut;
- }
+  font-size:15pt;
 
+ }
 
 .h {
   display: grid;
@@ -99,21 +113,32 @@ body {
   grid-template-rows: 0.7fr 1fr;
   grid-template-areas: "nume1" "continut1";
   grid-area: h;
+  border: 1px solid #000;
+  border-radius:15px;
+  background-color:   #5b85ae;
 }
 
-.nume1 { grid-area: nume1; }
+.nume1 { grid-area: nume1;
+padding-left:15%; 
+}
 
 .continut1 { grid-area: continut1; 
+  font-size:15pt;
 }
 
 .Dropdown {
   display: grid;
   grid-template-columns: 2fr;
   grid-template-rows: 1fr;
-  grid-template-areas: "list Buton";
+  grid-template-areas: "list";
   grid-area: Dropdown;
 }
 
 .list { grid-area: list;
-text-align: center;}
+text-align: center;
+}
 
+#cerere
+{
+  font-size:15pt;
+}
