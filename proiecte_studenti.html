@@ -2,140 +2,105 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="Style\proiecte_studenti.css">
+    <link rel="stylesheet" href="Style\style1.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Proiecte</title>
+    <title>Etape</title>
   </head>
   <body>
-        
     <nav class="menu">   
             <img id="fii"src="Resources\fii.png">
                 <a href="acatism.html" >Acasa</a>
                 <a href="#"class="active">Proiecte</a>
                 <a href="Etape_start.html"  >Etape</a>
                 <a href="#" >Contact</a>
-                <a href="html.html"  >Logout</a>
             <img id="univ"src="Resources\UNIV1.png">
     </nav>
-    <aside class="asi">
-            <h2>Alegerea proiectului</h2>
-            <p>Aici veti putea alege proiectul dorit</p>
-            <select class="drop">
-                <option value="Andrei Panu">Andrei Panu</option>
-                <option value="Lenuta Alboaie">Lenuta Alboaie</option>
-            </select>
-            <button>
-                    Alegeti
-                </button>
-                <br>
-            <select class="drop">
-                 <option value="Academic Thesis Manager">Academic Thesis Manager</option>
-                 <option value="Web App Security Alerter">Web App Security Alerter</option>
-                 <option value="Crisis Containment Service">Crisis Containment Service</option>
-                 <option value= "HTTPcafe"> HTTPcafe</option> 
-                 <option value="Kid Monitor">Kid Monitor</option>
-                 <option value="Collaborative Notepad ">Collaborative Notepad </option>
-                 <option value="Froxy ">Froxy</option>
-                 <option value="IoT Simulator">IoT Simulator</option>
-         </select>
-         <button>
-             Alegeti
-         </button>
-                <h2>Propuneri</h2>
-                        <p> Aici veti putea sa va scrieti propriile idei de proiecte, incluzand o descriere a acestora.</p>
-                          <p class="tit">Titlul proiectului:</p>
-                          <input type="text"><br>
-                          <p class="tit">Descrierea proiectului:</p>
-                          <textarea id="text">
-                            </textarea>
-                          <button>
-                              Trimiteti
-                          </button>
-                        
-              
-        </aside>
   <main>
         <div class="content">
-            
             <h1>Profesori</h1>
-                <div id="listing">
-                  <ul>
-                      <li>
-                          <h2>Andrei Panu</h2></li>
-                    <div class="title">
-                        Academic Thesis Manager
-                    </div>
-                    <div class="continut">
-                            Sa se realizeze o aplicatie Web privind managementul tezelor de licenta/master la nivelul unei facultati. Din punctul de vedere al profesorului, sistemul va oferi posibilitatea gestionarii temelor propuse si a studentilor arondati, inclusiv crearea unei planificari a celor mai importante etape pana la momentul sustinerii. Pentru studenti, aplicatia va fi capabila sa listeze/filtreze subiectele de interes pentru fiecare profesor in parte si sa permita inscrierea unei persoane in vederea indrumarii, eventual conform unor cerinte prelabile. Sistemul va verifica indeplinirea acestor cerinte, inclusiv va notifica -- via un flux Atom sau prin e-mail -- profesorul/studentul atunci cand survin intarzieri in efectuarea unor activitati (e.g., transmiterea unui raport preliminar) sau daca apar actualizari -- de pilda, profesorul a plasat o lista de lecturi recomandate. De asemenea, aplicatia va semnala posibile probleme privind variantele intermediare ale documentelor intocmite de student referitoare la format sau standarde de redactare. Progresul implementarii tezei va putea fi monitorizat automat prin intermermediul unui sistem online de management de cod-sursa precum Github.
-                    </div>
-                       
-                    <div class="title">
-                        Web App Security Alerter
-                    </div>
-                    <div class="continut">
-                    Folosind datele publice referitoare la incidente de securitate -- preluate, de exemplu, de la Web Application Exploits -- sa se realizeze un sistem capabil sa trimita alerte in timp-real despre noile vulnerabilitati software pentru o clasa de aplicatii (e.g., CMS, framework, modul, biblioteca etc.). Suplimentar, aplicatia va oferi pe baza unui API respectand paradigma REST diverse solutii -- precum sfaturi, rapoarte tehnice, ghiduri de programare defensiva, articole si altele -- vizand prevenirea si/sau eradicarea acestor incidente de securitate. Informatiile oferite vor fi disponibile in formate ca HTML, JSON si Atom. Bonus: recurgerea la un model si implementare publish/subscribe.
-                    </div>   
-                    <div class="title">
-                            Crisis Containment Service
-                    </div>
-                    <div class="continut">
-                            Sa se dezvolte o platforma Web care permite gestionarea situatiilor de urgenta (e.g., cutremure, incendii, inundatii etc.) de catre autoritati sau organizatii de profil. Aplicatia va putea integra Google Crisis Map si Fusion Tables pentru crearea de straturi suplimentare cu scopul furnizarii informatiilor de interes vizand evenimentele petrecute si zonele afectate. Suplimentar, se va recurge la utilizarea CAP (Common Alerting Protocol) pentru transmiterea de notificari si alerte populatiei (afectate direct sau in vecinatate); eventual, se pot folosi si diverse platforme sociale. Utilizand Geolocation API si servicii precum Google Person Finder, sistemul poate furniza automat informatii de interes pentru gasirea unei persoane disparute (e.g. atunci cand aceasta este inconstienta ori ranita) si/sau legate de eventualele adaposturi si rute de salvare. Bonus: recurgerea la microservicii Web.s
-                    </div> 
-                    <div class="title">
-                            HTTPcafe
-                    </div>
-                    <div class="continut">
-                            Sa se implementeze o aplicatie Web care simuleaza o cafenea destinata in special studentilor informaticieni. Interactiunea cu "clientii" se va realiza din pagini Web publice gazduite pe un anumit server Web, pe baza cimpului 'Referer' din antetul unui mesaj HTTP. Aplicatia trebuie sa puna la dispozitia "clientilor" o serie de resurse identificate via URI precum '/intrare', '/meniu', '/prefer/cafea', '/comanda/suc', '/comanda/zacusca', '/nota', '/iesire' etc. (dati frau liber imaginatiei). Desi identificarea clientului se va face pe baza contului din URL-ul oferit de Referer, trebuie mentinut un nivel minimal contabil si informativ: ce produse sunt in stoc si la ce pret, cine si ce a comandat, care e valoarea totala a notei de plata, la ce ora s-a inregistrat o comanda, cine mai era atunci in cafenea etc. Resursele sunt disponibile in cantitati finite, eventual ajustabile dinamic. "Filmul" ocuparii cafenelei va putea fi expus, in mod dinamic, ca document HTML, ca date JSON si ca flux de stiri Atom. De asemenea, "barman"-ul trebuie sa raspunda clientilor in mod "politicos HTTP" -- exemplu: daca se recurge la 'GET /comanda/alcool', se va intoarce codul 403 Forbidden. 
-                    </div>
-                    <div class="title">
-                            Kid Monitor
-                    </div>
-                    <div class="continut">
-                            Sa se implementeze un sistem Web de monitorizare in timp real a unui copil sau grup de copii, eventual pe baza unui senzor (de tip beacon) sau dispozitiv (ce poate fi emulat prin software cu ajutorul unui API REST). Se vor oferi in timp real atat locatia copilului pe o harta convenabil aleasa (e.g., la nivel de apartament, cladire, strada, cartier), cat si notificari daca se distanteaza la mai mult de M metri de un punct ori multime de puncte de interes sau de coordonatele actuale ale unei persoane: parinte, ruda, tutore, altcineva de incredere. Suplimentar, se vor realiza notificari pe baza unui serviciu Web privind posibile accidente precum coliziuni cu obiecte/autovehicule, izbituri la sol, contact cu animale posibil periculoase etc. De asemenea, se va oferi o interfata de administrare a copiilor monitorizati, inclusiv posibilitatea de a afla cu ce alti copii interactioneaza o anumita odrasla. Bonus: adoptarea de microservicii Web.
-                    </div>
-
+            <p>
+                <ul>
+                    <li> Andrei Panu
+                        <ol>
+                            <li id="parent1">
+                                Academic Thesis Manager
+                                    <div id="hover-content">
+                                        Sa se realizeze o aplicatie Web privind managementul tezelor de licenta/master la nivelul unei facultati.
+                                    </div>
+                            </li>
+                            <li id="parent">
+                                Web App Security Alerter
+                                    <div id="hover-content">
+                                        Sa se realizeze un sistem capabil sa trimita alerte in timp-real despre noile vulnerabilitati software pentru o clasa de aplicatii.
+                                    </div>
+                            </li>
+                            <li id="parent">
+                                Crisis Containment Service
+                                    <div id="hover-content">
+                                        Sa se dezvolte o platforma Web care permite gestionarea situatiilor de urgenta.
+                                    </div>
+                            </li>
+                            <li id="parent">
+                                HTTPcafe
+                                    <div id="hover-content">
+                                        Sa se implementeze o aplicatie Web care simuleaza o cafenea destinata in special studentilor informaticieni.
+                                    </div>
+                            </li>
+                            <li id="parent">
+                                Kid Monitor
+                                    <div id="hover-content">
+                                        Sa se implementeze un sistem Web de monitorizare in timp real a unui copil sau grup de copii.
+                                    </div>
+                            </li>
+                        </ol>
+                    </li>
                     <li>
-                        <h2>Lenuţa Alboaie</h2> </li>
-
-                        <div class="title">
-                                Collaborative Notepad 
-                        </div>
-                        <div class="continut">
-                                Sa se realizeze o aplicatie client/server ce permite editarea simultana a fisierelor text. Un fisier va putea fi editat in acelasi timp de maxim doi clienti. Serverul va permite insa mai multe astfel de sesiuni concurente de editare pe documente diferite (ex. 2 perechi de cate 2 clienti pe 2 documente). Serverul va stoca fisierele, punand la dispozitia clientilor operatiile de creare si download. Aplicatia va trebui sa implementeze un protocol de comunicare pentru operarea concurenta asupra fisierelor. Se va avea in vedere consistenta documentului editat la modificari simultane asupra unei parti comune (ex. plasarea cursorului celor doi clienti cand unul scrie si celalalt sterge in aceeasi pozitie).
-                        </div>
-                        <div class="title">
-                                Froxy
-                        </div>
-                        <div class="continut">
-                                Sa se implementeze o aplicatie 'proxy' pentru protocolul FTP. Aplicatia va include atat o componenta server (proxy-ul in sine) cat si o componenta client. Serverul (proxy-ul) va juca rol de client FTP pentru un alt server FTP de la care va prelua si stoca temporar fisiere. Dimensiunea maxima si tipurile fisierelor stocate temporar de acest proxy se vor specifica intr-un fisier de configurare. Acest fisier va mai contine si o lista de situri interzise, pe baza unor politici de interzicere a accesului la ele (e.g., interzicerea accesului la siturile FTP din domeniul .uaic.ro intre orele 08-20, in zilele de luni-vineri, pentru clienti provenind din domeniul .y.ro). Componenta client ofera unui utilizator obisnuit posibilitatea de download a fisierelor stocate pe proxy si in plus, unui administrator, posibilitatea de a modifica fisierul de configurare.
-                        </div>
-                        <div class="title">
-                                IoT Simulator
-                        </div>
-                        <div class="continut">
-                                Implementati un client cu o interfata grafica atractiva care va juca rol de remote (telecomanda) pentru mai multe "dispozitive inteligente" (servere concurente). Clientul va putea alege cu ce dispozitive sa se conecteze dintre cele disponibile (minim 3, cum ar fi bec, telecomanda TV, inca unul la alegere) si va fi capabil sa schimbe starea (cresterea volumului, schimbarea canalului, etc). Aceste schimbari de stare vor putea fi vizibile atat in interfata cat si in starea serverului. 
-                        </div>
-        
-            </ul>
-            </div>
-
-            <h1> Proiecte propuse de studenti </h1>
-                    <ul>
-                            <li class="parent">
-                                    Clothes Shop Management System
-                                        <div class="hover-content">
-                                                Sa se dezvolte o aplicatie client/server care sa ofere functionalitatea unui magazin online de produse.
+                        Lenuţa Alboaie
+                        <ol>
+                                <li id="parent">
+                                    CastleWarsC
+                                        <div id="hover-content">
+                                            Sa se implementeze o aplicatie client cu o interfata prietenoasa pentru Castle Wars.
                                         </div>
                                 </li>
-                                <li class="parent">
-                                        Garbage Management System
-                                            <div class="hover-content">
-                                                    Sa se dezvolte o aplicatie care sa ofere functionalitatea unui sistem de strangere a gunoaielor.
-                                            </div>
-                                    </li>
-                    </ul> 
-        </div>
-           
+                                <li id="parent">
+                                        SFTPFileSystem
+                                        <div id="hover-content">
+                                            Sa se scrie o aplicatie care permite montarea locala a unui sistem de fisiere exportat de un server SFTP aflat pe alta masina.
+                                        </div>
+                                </li>
+                                <li id="parent">
+                                        YourOwnNFS
+                                        <div id="hover-content">
+                                            Sa se scrie o aplicatie care permite montarea locala a unui sistem de fisiere exportat de un server propriu. 
+                                        </div>
+                                </li>
+                            </ol>
+                    </li>
+            </ul>
+            </p>
+            <h3> Proiecte propuse de studenti </h3>
+            <p>
+                <ul>
+                        <li id="parent">
+                                Clothes Shop Management System
+                                    <div id="hover-content">
+                                            Sa se dezvolte o aplicatie client/server care sa ofere functionalitatea unui magazin online de produse.
+                                    </div>
+                            </li>
+                </ul>
+            </p> 
+            </div>
+            <aside>
+                    <h2>Propuneri</h2>
+                    <p>
+                      Aici veti putea sa va scrieti propriile idei de proiecte, incluzand o descriere a acestora.<br>
+                      <input type="text">
+                      <button>
+                          Submit
+                      </button>
+                  </p>
+            </aside>       
         </main>
     </body>
 </html>
