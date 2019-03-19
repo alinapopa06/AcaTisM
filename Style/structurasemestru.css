@@ -7,6 +7,7 @@ html, body {
   body {
     font-family: 'PT Sans', Arial, Verdana;
     background-color: #c2cedb;
+
   }
  
 
@@ -94,9 +95,9 @@ a.active {
   overflow: auto;
   text-align: center;  
   grid-column: 1/2;
-  grid-row:1/2;
   border-radius: 40px;
 
+  
 }
   
 .buttons a{
@@ -124,46 +125,50 @@ a.active {
 .continutgeneral
 {
   display: grid;
-  grid-template-columns: 16% 44% 39%;
-   grid-template-rows: auto auto auto  ; 
+  grid-template-columns: 16% 42% 42%;
+   
   grid-gap: 5px;
   grid-auto-rows: minmax(100px, auto);
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
 }
 
-.continut
+.continutsem1
 {
-  
-   font-size: 17px;
-   text-align: center;
-   margin: 2px;
-   padding: 10px;
-   background: rgba(8, 64, 82, 0.4);
-   border-radius: 40px;
-   grid-row:1/2;
-  
+    font-size: 17px;
+    text-align: center;
+    margin: 2px;
+    padding: 10px;
+    background: rgba(8, 64, 82, 0.4);
+    border-radius: 40px;
+   
+}
+.continutsem2
+{
+    font-size: 17px;
+    text-align: center;
+    margin: 2px;
+    padding: 10px;
+    background: rgba(8, 64, 82, 0.4);
+    border-radius: 40px;
+    
+   
 }
 
-.continut dt
+.continutsem1 dt
 {
   font-weight: bold;
-  font-size: 20px;
+}
+.continutsem2 dt
+{
+  font-weight: bold;
 }
 
-.dece
-{
-  color: rgb(63, 71, 73);
-}
 
-.prezentare
+.sem1,.sem2
 {
-  background: rgba(8, 64, 82, 0.4);
-   border-radius: 30px;
-   grid-column: 3;
-   grid-row: 1/2;
-   padding: 6px;
+  color: #24282e;
 }
- 
 
 
 

@@ -7,6 +7,7 @@ html, body {
   body {
     font-family: 'PT Sans', Arial, Verdana;
     background-color: #c2cedb;
+
   }
  
 
@@ -94,9 +95,10 @@ a.active {
   overflow: auto;
   text-align: center;  
   grid-column: 1/2;
-  grid-row:1/2;
+  grid-row: 1/2;
   border-radius: 40px;
 
+  
 }
   
 .buttons a{
@@ -124,46 +126,46 @@ a.active {
 .continutgeneral
 {
   display: grid;
-  grid-template-columns: 16% 44% 39%;
-   grid-template-rows: auto auto auto  ; 
+  grid-template-columns: 16% 42% 41%;
+  grid-template-rows: auto auto auto auto auto auto;
+   
   grid-gap: 5px;
   grid-auto-rows: minmax(100px, auto);
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
 }
 
-.continut
+.inscriere
 {
-  
-   font-size: 17px;
-   text-align: center;
-   margin: 2px;
-   padding: 10px;
-   background: rgba(8, 64, 82, 0.4);
-   border-radius: 40px;
-   grid-row:1/2;
-  
+    font-size: 17px;
+  text-align: left;
+    margin: 2px;
+    padding: 10px;
+    background: rgba(8, 64, 82, 0.4);
+    border-radius: 40px;
+   grid-row-start: 1;
+   grid-row-end: 3;
+   grid-column: 2;
+   
 }
-
-.continut dt
+.dosar
 {
-  font-weight: bold;
-  font-size: 20px;
+    font-size: 17px;
+  text-align: left;
+    margin: 2px;
+    padding: 10px;
+    background: rgba(8, 64, 82, 0.4);
+    border-radius: 40px;
+    grid-column: 3;
+    grid-row: 1/2;
+   
+}
+.inscriere a , .dosar a{
+    color: #49140e;
+    text-decoration: solid;
 }
 
-.dece
-{
-  color: rgb(63, 71, 73);
+.inscriere a:hover , .dosar a:hover{
+   
+    text-decoration: underline;
 }
-
-.prezentare
-{
-  background: rgba(8, 64, 82, 0.4);
-   border-radius: 30px;
-   grid-column: 3;
-   grid-row: 1/2;
-   padding: 6px;
-}
- 
-
-
-
