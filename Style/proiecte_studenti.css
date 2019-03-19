@@ -64,13 +64,20 @@ body {
   font-size:larger;
   float:right;
   width:25%;
-  position: sticky;
+  position: fixed;
   top:8%;
+  background-color: rgb(144, 170, 205);
+  padding-left:1%;
+  padding-top:1%;
+  height:100%;
+  right:0;
+
 }
 
 .content{
   padding-left: 10%;
   padding-right:32%;
+  padding-top:1%;
 }
 
 .title{
@@ -85,7 +92,7 @@ background-image: linear-gradient(to left, rgba(255,0,0,0), #e2766a);;
 
 .continut
 {
-  background-color: 	rgb(144, 170, 205);
+  background-color:rgb(144, 170, 205);
   padding-top:1%;
   padding-bottom:1%;
 padding-left:2%;

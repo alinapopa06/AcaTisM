@@ -58,7 +58,7 @@ a.active {
 
 .parent:hover .hover-content {
   display:block;
-  color:white;
+  color:black;
 }
 
 #parent1
@@ -82,35 +82,43 @@ a.active {
 .grid-container {
   display: grid;
   grid-template-columns: 0.5fr 1.5fr 0.5fr 1.5fr 0.5fr;
-  grid-template-rows: 1fr 2fr 1fr 0.5fr 0.5fr 1fr;
+  grid-template-rows: 1fr 3fr 1fr 0.5fr 0.5fr 1fr;
   grid-template-areas: ". . . . ." ". g . h ." ". g . h ." ". . . . ." ". Dropdown Dropdown Dropdown ." ". . . . .";
 }
 
 .g {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 0.7fr 1fr;
+  grid-template-rows: 0.4fr 1fr;
   grid-template-areas: "nume" "continut";
   grid-area: g;
   border: 1px solid #000;
   border-radius:15px;
   background-color:	#5b85ae;
+
+ 
 }
 
 .nume { grid-area: nume;
-  padding-left:15%;
+  text-align: center;
+  padding-top:5%;
   
 }
 
 .continut { grid-area: continut;
   font-size:15pt;
+  color:#F5FFFA;
+ }
 
+ .continut ol
+ {
+  list-style-type:square;
  }
 
 .h {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 0.7fr 1fr;
+  grid-template-rows: 0.4fr 1fr;
   grid-template-areas: "nume1" "continut1";
   grid-area: h;
   border: 1px solid #000;
@@ -119,11 +127,13 @@ a.active {
 }
 
 .nume1 { grid-area: nume1;
-padding-left:15%; 
+text-align: center;
+padding-top:5%; 
 }
 
 .continut1 { grid-area: continut1; 
   font-size:15pt;
+  color:#F5FFFA;
 }
 
 .Dropdown {
@@ -140,5 +150,6 @@ text-align: center;
 
 #cerere
 {
+  font-weight: bold;
   font-size:15pt;
 }
