@@ -78,81 +78,146 @@ a.active {
   margin: 5px;
 }
 
- 
-.grid-container {
-  display: grid;
-  grid-template-columns: 0.5fr 1.5fr 0.5fr 1.5fr 0.5fr;
-  grid-template-rows: 1fr 3fr 1fr 0.5fr 0.5fr 1fr;
-  grid-template-areas: ". . . . ." ". g . h ." ". g . h ." ". . . . ." ". Dropdown Dropdown Dropdown ." ". . . . .";
-}
 
-.g {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 0.4fr 1fr;
-  grid-template-areas: "nume" "continut";
-  grid-area: g;
-  border: 1px solid #000;
-  border-radius:15px;
-  background-color:	#5b85ae;
+    .grid-container {
+      display: grid;
+      grid-template-columns: 0.2fr 2fr 0.2fr 2fr 0.2fr 2fr 0.2fr;
+      grid-template-rows: 0.5fr 1.5fr 0.5fr;
+      grid-template-areas: ". . . . . . ." ". grid1 . grid2 . grid3 ." ". . . . . . .";
+      height: 100%;
+    }
+    
+    .grid1 {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 0.2fr 3fr;
+      grid-template-areas: "nume1" "continut1";
+      grid-area: grid1;
+      border: 1px solid #000;
+    border-radius:15px;
+    background-color:	#5b85ae;
+    }
+    
+    .nume1 { grid-area: nume1;
+      text-align: center;
+      padding-top:5%; }
+    
+    .continut1 { grid-area: continut1;
+      font-size:15pt;
+      color:#F5FFFA;
+     }
+    
+    .grid2 {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 0.2fr 3fr;
+      grid-template-areas: "nume2" "continut2";
+      grid-area: grid2;
+      border: 1px solid #000;
+    border-radius:15px;
+    background-color:	#5b85ae;
+    }
+    
+    .nume2 { grid-area: nume2;
+      text-align: center;
+      padding-top:5%; }
+    
+    .continut2 { grid-area: continut2;
+      font-size:15pt;
+      color:#F5FFFA; }
+    
+    .grid3 {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 0.2fr 3fr;
+      grid-template-areas: "nume3" "continut3";
+      grid-area: grid3;
+      border: 1px solid #000;
+    border-radius:15px;
+    background-color:	#5b85ae;
+    }
+    
+    .nume3 { grid-area: nume3; 
+      text-align: center;
+      padding-top:5%;}
+    
+    .continut3 { grid-area: continut3;
+      font-size:15pt;
+      color:#F5FFFA; }
 
- 
-}
 
-.nume { grid-area: nume;
-  text-align: center;
-  padding-top:5%;
-  
-}
-
-.continut { grid-area: continut;
-  font-size:15pt;
-  color:#F5FFFA;
- }
-
- .continut ol
- {
-  list-style-type:square;
- }
-
-.h {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 0.4fr 1fr;
-  grid-template-areas: "nume1" "continut1";
-  grid-area: h;
-  border: 1px solid #000;
-  border-radius:15px;
-  background-color:   #5b85ae;
-}
-
-.nume1 { grid-area: nume1;
-text-align: center;
-padding-top:5%; 
-}
-
-.continut1 { grid-area: continut1; 
-  font-size:15pt;
-  color:#F5FFFA;
-}
-
-.Dropdown {
-  display: grid;
-  grid-template-columns: 2fr;
-  grid-template-rows: 0.4fr 1fr;
-  grid-template-areas: "list" "continut2";
-  grid-area: Dropdown;
-}
-
-.list { grid-area: list;
-text-align: center;
-}
-.continut2{
-grid-area:continut2;
-text-align:center;
-}
-#cerere
+@media screen and (max-width: 635px)
 {
-  font-weight: bold;
-  font-size:15pt;
+  .menu{
+          grid-template-columns: 10% 15% 15% 15% 15% 15% 15%;
+  }
+  .menu a
+  {
+          font-size: 8pt;
+  }
+  #fii{
+      
+  padding-top:5px;
+  }
+  #univ{
+    padding-left:0px;
+    padding-top:5px;
+  }
+  
+  .nume1
+  {
+    font-size:12px;
+  }
+  .nume2{
+    font-size:12px;
+  }
+  .nume3{
+    font-size:12px;
+  }
+  .continut1{
+    font-size:15px;
+  }
+  .continut2{
+    font-size:15px;
+  }
+  .continut3{
+    font-size:15px;
+  }
+  
+  .grid-container
+  {
+    grid-template-rows: 0.1fr 0.5fr 0.1fr;
+  }
+      
+}
+
+@media screen and (max-width: 375px)
+{
+	.menu{
+		font-size: 12px;
+  }
+  .nume1
+  {
+    font-size:10px;
+  }
+  .nume2{
+    font-size:10px;
+  }
+  .nume3{
+    font-size:10px;
+  }
+  .continut1{
+    font-size:12px;
+  }
+  .continut2{
+    font-size:12px;
+  }
+  .continut3{
+    font-size:12px;
+  }
+  
+  .grid-container
+  {
+    grid-template-rows: 0.1fr 0.5fr 0.1fr;
+  }
 }
