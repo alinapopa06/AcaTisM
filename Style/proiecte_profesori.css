@@ -139,15 +139,18 @@ padding-top:5%;
 .Dropdown {
   display: grid;
   grid-template-columns: 2fr;
-  grid-template-rows: 1fr;
-  grid-template-areas: "list";
+  grid-template-rows: 0.4fr 1fr;
+  grid-template-areas: "list" "continut2";
   grid-area: Dropdown;
 }
 
 .list { grid-area: list;
 text-align: center;
 }
-
+.continut2{
+grid-area:continut2;
+text-align:center;
+}
 #cerere
 {
   font-weight: bold;
