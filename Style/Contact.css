@@ -1,0 +1,244 @@
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+#test{
+	color: red;
+
+}
+
+body {
+  font-family: 'PT Sans', Arial, Verdana;
+  background-color: #eee;
+}
+.content h1{
+	text-align: left;
+	margin: auto;
+	padding-top: 30px;
+	padding-bottom: 30px; 
+	padding-left: 50px;
+	font-size: 40px;
+
+}
+#universitate{
+	width: 100%;
+	height: 50%;
+
+}
+.content p{
+	text-align: left;
+	margin: auto;
+	font-size: 20px;
+	padding-bottom: 30px; 
+	padding-left: 50px;
+}
+.content
+{
+	overflow-x:hidden;
+}
+.jumbotron {
+	 background-color:  #e1e1e1;
+	 margin-top: 0px;
+}
+.jumbotron h1
+{
+	font-size: 250%;
+}
+
+.menu {
+	display: grid;
+  grid-template-columns: 15% 14% 14% 14% 14% 14% 15%;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 10%;
+  margin: auto;
+  align-items: center;
+  background-color: #2c3e50;
+  background-image: linear-gradient(to right, #071731, #132d57, #071731);
+  position: sticky;
+  top:0;
+  z-index: 1;
+}
+.menu a{
+	text-align: center;
+	padding: 10%;
+}
+#fii
+{
+	padding-left: 20px;
+		width: 50%;
+}
+#univ{
+	width: 70%;
+	padding-left: 30px;
+	}
+a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+	padding: 1em;
+  }
+a.active {
+  background-color: #e74c3c;
+}
+.menu a:hover {
+  background-color: gray;
+}
+.studenti{
+	display: grid;
+	grid-template-columns: 10% 30% 20%  30% 10%;
+	grid-template-rows: auto;
+}
+#student1{
+	grid-column: 3;
+	grid-row: 1;
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: 0.2fr 1fr 0.2fr 1fr 0.2fr;
+  grid-template-rows: 0.5fr 0.5fr 2fr 0.5fr 0.5fr 2fr 1fr;
+  grid-template-areas: ". . . . ." ". Nume . Nume ." ". Continut . Continut ." ". . . . ." ". Nume . Nume ." ". Continut . Continut ." ". . . . .";
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: 0.2fr 1fr 0.2fr 1fr 0.2fr;
+  grid-template-rows: 0.5fr 0.5fr 2fr 0.5fr 0.5fr 2fr 1fr;
+  grid-template-areas: ". . . . ." ". Student . Student1 ." ". Student . Student1 ." ". . . . ." ". Student2 . Student3 ." ". Student2 . Student3 ." ". . . . .";
+}
+
+.Nume { grid-area: Nume; }
+
+.Continut {
+ grid-area: Continut; 
+ list-style: none;
+}
+.Student {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 0.7fr 2.5fr;
+  grid-template-areas: "Nume" "Continut";
+  grid-area: Student;
+}
+.Student1 {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 0.7fr 2.5fr;
+  grid-template-areas: "Nume" "Continut";
+  grid-area: Student1;
+}
+
+.numestyle
+{
+	height: 20px;
+}
+.continutstyle
+{
+	position: relative;
+	background-color: #d9d9d9;
+	border-radius: 15px;
+	margin: 5px;
+}
+.Continut ul
+{
+	list-style-type: none;
+
+}
+.Continut li
+{
+		padding-top: 5px;
+		padding-right: 10px;
+		font-size: 20px;
+
+}
+.Continut span
+{
+		font-size: 20px;
+
+}
+.studentstyle{
+	text-align: left;
+	background-color:  #486684;
+	border-radius: 15px;
+}
+.studentstyle p{
+	font-weight: bold;
+	text-align: center;
+	font-size: 23px;
+	color: white;
+	padding: 1em;
+}
+.textdeco
+{
+	font-weight: bold;
+	font-size: 20px;
+}
+.morebtn
+{
+	text-align: right;
+	color:#e74c3c;
+	position: absolute;
+	right: 0%;
+	bottom: 0px;
+	width: 100%;
+	font-weight: bold;
+}
+
+@media screen and (max-width: 992px)
+{
+  .jumbotron h1{
+	   font-size: 18pt;
+  }
+  h1{
+	  font-size: 15pt;
+  }
+	.grid-container{
+		grid-template-rows: 0.1fr 1.2fr 0.1fr 1.2fr 0.1fr 1.2fr 0.1fr;
+	}
+	.progressbar li{
+		font-size:10px;
+	}
+	.progressbar li:before {
+  content: counter(step);
+  counter-increment: step;
+  width: 30px;
+	height: 30px;
+	line-height:30px;
+	}
+	h1.titlu
+	{
+		font-size:12pt;
+	}
+	h1.titlu1
+	{
+		font-size:12pt;
+	}
+	
+}
+@media screen and (max-width: 635px)
+{
+	.menu{
+		grid-template-columns: 10% 15% 15% 15% 15% 15% 15%;
+	}
+	.menu a
+	{
+		font-size: 8pt;
+	}
+	#fii{
+
+		padding-top:5px;
+    width: 70%;
+	}
+	#univ{
+		padding-left:0px;
+		padding-top:5px;
+	}
+		
+}
+@media screen and (max-width: 375px)
+{
+	.menu{
+		font-size: 12px;
+	}
+}
