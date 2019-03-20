@@ -116,30 +116,30 @@ a.active {
 }
 .Student {
   display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 0.7fr 2.5fr;
+  grid-template-columns: auto;
+  grid-template-rows: auto;
   grid-template-areas: "Nume" "Continut";
   grid-area: Student;
 }
 .Student1 {
   display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 0.7fr 2.5fr;
+  grid-template-columns: auto;
+  grid-template-rows: auto;
   grid-template-areas: "Nume" "Continut";
   grid-area: Student1;
 }
 
 .Student2 {
   display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 0.7fr 2.5fr;
+  grid-template-columns: auto;
+  grid-template-rows: auto;
   grid-template-areas: "Nume" "Continut";
   grid-area: Student2;
 }
 .Student3 {
   display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 0.7fr 2.5fr;
+  grid-template-columns: auto;
+  grid-template-rows: auto;
   grid-template-areas: "Nume" "Continut";
   grid-area: Student3;
 }
@@ -198,4 +198,87 @@ a.active {
 	width: 100%;
 	font-weight: bold;
 }
+@media screen and (max-width: 970px)
+{
+  .jumbotron h1{
+	   font-size: 18pt;
+  }
+  h1{
+	  font-size: 15pt;
+  }
+  .studentstyle p {
+    font-weight: bold;
+    text-align: center;
+    font-size: 15px;
+    color: white;
+}
+    .Continut li
+	{
+			padding-top: 5px;
+			font-size: 15px;
 
+	}
+	a {
+    font-size: 15px;
+	}
+	.Continut span 
+	{
+    font-size: 15px;
+	}
+	.Continut ul
+	{
+		padding-left: 1.5em;
+	}
+}
+@media screen and (max-width: 635px )
+{
+	.menu{
+		grid-template-columns: 10% 15% 15% 15% 15% 15% 15%;
+	}
+	.menu a
+	{
+		font-size: 8pt;
+	}
+	#fii{
+
+		padding-top:5px;
+    width: 70%;
+	}
+	#univ{
+		padding-left:0px;
+		padding-top:5px;
+	}
+	.studentstyle p {
+    font-weight: bold;
+    text-align: center;
+    font-size: 15px;
+    color: white;
+}
+    .Continut li
+	{
+			padding-top: 2px;
+			font-size: 10px;
+
+	}
+	a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 10px;
+    padding: 1em;
+	}
+	.Continut span {
+    font-size: 10px;
+}
+}
+		
+}
+@media screen and (max-width: 450px)
+{
+  .progressbar li{
+    font-size:7px;
+  }
+
+	.menu{
+		font-size: 12px;
+	}
+}

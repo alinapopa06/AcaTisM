@@ -161,7 +161,7 @@ body {
 }
 
 .menu {
-	display: grid;
+  display: grid;
   grid-template-columns: 15% 14% 14% 14% 14% 14% 15%;
   margin: 0;
   padding: 0;
@@ -432,7 +432,7 @@ h1{
 	}
 	
 }
-@media screen and (max-width: 635px)
+@media screen and (max-width: 635px )
 {
 	.menu{
 		grid-template-columns: 10% 15% 15% 15% 15% 15% 15%;
@@ -452,8 +452,12 @@ h1{
 	}
 		
 }
-@media screen and (max-width: 375px)
+@media screen and (max-width: 450px)
 {
+  .progressbar li{
+    font-size:7px;
+  }
+
 	.menu{
 		font-size: 12px;
 	}
