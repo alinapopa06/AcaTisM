@@ -9,21 +9,21 @@ body {
   background-color: #eee;
 }
 .content h1{
-  text-align: left;
-  margin: auto;
-  padding-top: 30px;
-  padding-bottom: 30px; 
-  padding-left: 50px;
-  font-size: 40px;
+	text-align: left;
+	margin: auto;
+	padding-top: 30px;
+	padding-bottom: 30px; 
+	padding-left: 50px;
+	font-size: 40px;
 
 }
 .overlay1 {
   position: absolute;
-  top: 71.2%;
+  top: 24.4%;
   left: 32.6%;
   opacity: 0.7;
   border-radius:20px;
-  background-color: #e74c3c;
+  background-color: gray;
   overflow: hidden;
   width: 15%;
   height: 9%;
@@ -35,7 +35,7 @@ body {
 }
 .text1 {
   color: white;
-  font-size: 15px;
+  font-size: 20px;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -44,11 +44,11 @@ body {
 }
 .overlay2 {
   position: absolute;
-  top: 71.2%;
+  top: 24.4%;
   right: 9.5%;
   opacity: 0.7;
   border-radius:20px;
-  background-color: #e74c3c;
+  background-color: gray;
   overflow: hidden;
   width: 15%;
   height: 9%;
@@ -60,7 +60,7 @@ body {
 }
 .text2 {
   color: white;
-  font-size: 15px;
+  font-size: 20px;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -69,11 +69,11 @@ body {
 }
 .overlay3 {
   position: absolute;
-  top: 115%;
+  top: 55.5%;
   left: 32.6%;
   opacity: 0.7;
   border-radius:20px;
-  background-color: #e74c3c;
+  background-color: gray;
   overflow: hidden;
   width: 15%;
   height: 9%;
@@ -85,7 +85,7 @@ body {
 }
 .text3 {
   color: white;
-  font-size: 15px;
+  font-size: 20px;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -94,11 +94,11 @@ body {
 }
 .overlay4 {
   position: absolute;
-  top: 115%;
+  top: 55.5%;
   right: 9.5%;
   opacity: 0.7;
   border-radius:20px;
-  background-color: #e74c3c;
+  background-color: gray;
   overflow: hidden;
   width: 15%;
   height: 9%;
@@ -110,7 +110,7 @@ body {
 }
 .text4 {
   color: white;
-  font-size: 15px;
+  font-size: 20px;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -123,7 +123,7 @@ body {
   left: 32.6%;
   opacity: 0.7;
   border-radius:20px;
-  background-color: #e74c3c;
+  background-color: gray;
   overflow: hidden;
   width: 15%;
   height: 9%;
@@ -144,24 +144,38 @@ body {
 }
 
 .content p{
-  text-align: left;
-  margin: auto;
-  font-size: 20px;
-  padding-bottom: 30px; 
-  padding-left: 50px;
+	text-align: left;
+	margin: auto;
+	font-size: 20px;
+	padding-bottom: 2%; 
+	padding-left: 5%;
+}
+#btn
+{
+  position: absolute;
+  bottom: 4%;
+  right:4%;
+  border-radius: 10%;
+  width: 5%;
+
+}
+.content h2
+{
+    font-size: 20pt;
+    padding-left: 5%;
 }
 .content
 {
-  overflow-x:hidden;
+	overflow-x:hidden;
 }
 .jumbotron {
-   background-color:  #e1e1e1;
-   margin-top: 0px;
+	 background-color:  #e1e1e1;
+	 margin-top: 0px;
    z-index: 0;
 }
 
 .menu {
-  display: grid;
+	display: grid;
   grid-template-columns: 15% 14% 14% 14% 14% 14% 15%;
   margin: 0;
   padding: 0;
@@ -176,23 +190,23 @@ body {
   z-index: 1;
 }
 .menu a{
-  text-align: center;
-  padding: 10%;
+	text-align: center;
+	padding: 10%;
 }
 #fii
 {
-  padding-left: 20px;
-    width: 50%;
+	padding-left: 20px;
+		width: 50%;
 }
 #univ{
-  width: 70%;
-  padding-left: 30px;
-  }
+	width: 70%;
+	padding-left: 30px;
+	}
 .menu a {
     color: #fff;
     text-decoration: none;
     font-size: 18px;
-  padding: 1em;
+	padding: 1em;
   }
 a.active {
   background-color: #e74c3c;
@@ -204,53 +218,59 @@ a.active:hover {
   background-color: #e74c3c;
 }
 .studenti{
-  display: grid;
-  grid-template-columns: 10% 30% 20%  30% 10%;
-  grid-template-rows: auto;
+	display: grid;
+	grid-template-columns: 10% 30% 20%  30% 10%;
+	grid-template-rows: auto;
 }
 #student1{
-  grid-column: 3;
-  grid-row: 1;
+	grid-column: 3;
+	grid-row: 1;
 }
 #student2{
-  grid-column: 4;
-  grid-row: 1;
+	grid-column: 4;
+	grid-row: 1;
 }
 .grid-container {
+	position:relative;
   display: grid;
   grid-template-columns: 0.4fr 1.6fr 0.2fr 1.6fr 0.4fr;
-  grid-template-rows: 0.4fr 1.2fr 0.3fr 1.2fr 0.3fr 0.2fr;
-  grid-template-areas: ". . . . ." ". Etapa1 . Etapa2 ." ". . . . ." ". Etapa3 . Etapa4 ." ". . . . .";
+  grid-template-rows: 0.4fr 1.2fr 0.3fr 1.2fr 0.3fr 1.2fr 0.2fr;
+  grid-template-areas: ". . . . ." ". Etapa1 . Etapa2 ." ". . . . ." ". Etapa3 . Etapa4 ." ". . . . ." ". Etapa5 . . .";
 }
 
 .Etapa1 { 
-  grid-area: Etapa1; 
-  text-align: center;
-  border-radius: 20px;
+	grid-area: Etapa1; 
+	text-align: center;
+	border-radius: 20px;
+  position: relative;
 }
 .grid-container ol
 {
-  list-style-type: square;
-  text-align: left;
+	list-style-type: square;
+	text-align: left;
 }
 .Etapa2 { 
-  text-align: left;
-  grid-area: Etapa2; 
+  position: relative;
+	text-align: left;
+	grid-area: Etapa2; 
   border-radius: 20px;
 }
 
 .Etapa3 { 
-  text-align: center;
-  grid-area: Etapa3;
+   position: relative;
+	text-align: center;
+	grid-area: Etapa3;
   border-radius: 20px;
 }
 
 .Etapa4 { 
-  text-align: center;
-  grid-area: Etapa4;
+   position: relative;
+	text-align: center;
+	grid-area: Etapa4;
   border-radius: 20px;
 }
 .Etapa5 { 
+   position: relative;
   grid-area: Etapa5; 
   text-align: center;
   border-radius: 20px;
@@ -268,21 +288,20 @@ a.active:hover {
 }
 .textdeco
 {
-  font-weight: bold;
-  font-size: 10px;
+	font-weight: bold;
 }
 .morebtn
 {
-  text-align: right;
-  color:#e74c3c;
-  font-weight: bold;
+	text-align: right;
+	color:#e74c3c;
+	font-weight: bold;
 }
 .container {
   width: 100%;
   margin-bottom: 30px;
 }
 h1{
-  text-align: center;
+	text-align: center;
   padding: 5px; 
 }
 .progressbar {
@@ -383,6 +402,14 @@ h1{
   text-align: center;
   margin-top: 20%;
 }
+.dropdown1
+{
+  width: 20%;
+  height: 10%;
+  position: absolute;
+  bottom: 4%;
+  right: 4%;
+}
 .dropdown
 {
   grid-area: dropdown;
@@ -398,62 +425,62 @@ h1{
 }
 #img
 {
-  width:100%;
+	width:100%;
+  margin-bottom: 5%;
 }
 @media screen and (max-width: 992px)
 {
   .jumbotron h1{
-     font-size: 18pt;
+	   font-size: 18pt;
   }
   h1{
-    font-size: 15pt;
+	  font-size: 15pt;
   }
-  .grid-container{
-    grid-template-rows: 0.1fr 1.2fr 0.1fr 1.2fr 0.1fr 1.2fr 0.1fr;
-  }
-  .progressbar li{
-    font-size:10px;
-  }
-  .progressbar li:before {
+	.grid-container{
+		grid-template-rows: 0.1fr 1.2fr 0.1fr 1.2fr 0.1fr 1.2fr 0.1fr;
+	}
+	.progressbar li{
+		font-size:10px;
+	}
+	.progressbar li:before {
   content: counter(step);
   counter-increment: step;
   width: 30px;
-  height: 30px;
-  line-height:30px;
-  }
-  h1.titlu
-  {
-    font-size:12pt;
-  }
-  h1.titlu1
-  {
-    font-size:12pt;
-  }
-  
+	height: 30px;
+	line-height:30px;
+	}
+	h1.titlu
+	{
+		font-size:12pt;
+	}
+	h1.titlu1
+	{
+		font-size:12pt;
+	}
+	
 }
 @media screen and (max-width: 635px)
 {
-  .menu{
-    grid-template-columns: 10% 15% 15% 15% 15% 15% 15%;
-  }
-  .menu a
-  {
-    font-size: 8pt;
-  }
-  #fii{
+	.menu{
+		grid-template-columns: 10% 15% 15% 15% 15% 15% 15%;
+	}
+	.menu a
+	{
+		font-size: 8pt;
+	}
+	#fii{
 
-    padding-top:5px;
-    width: 70%;
-  }
-  #univ{
-    padding-left:0px;
-    padding-top:5px;
-  }
-    
+		padding-top:5px;
+	}
+	#univ{
+		padding-left:0px;
+		padding-top:5px;
+	}
+		
 }
 @media screen and (max-width: 375px)
 {
-  .menu{
-    font-size: 12px;
-  }
+	.menu{
+		font-size: 12px;
+	}
 }
