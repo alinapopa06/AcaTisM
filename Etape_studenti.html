@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="Style\StefanStyle2.css">
+    <link rel="stylesheet" href="Style\StefanStyle_studenti.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Etape</title>
   </head>
@@ -22,10 +22,13 @@
     </nav>
      <div class="content">
         <div class="jumbotron">
-            <h1>Dumitrescu Malina</h1>
-            <p>Student in anul II la grupa A1 la master </p>
+            <h1>Profilul meu</h1>
+            <p class="textdeco">Licenta</p>
+            <p class="detalii"><span class="textdeco">An de studiu:</span> II </p>
+            <p class="detalii"><span class="textdeco">Grupa:</span> A3</p>
           </div>
         </div>
+        <h1>Etapele mele</h1>
    <div class="grid-container">
       <div class="Etapa1 active_project">
         <h1>Depistarea bibliografiei-schitarea planului</h1>
@@ -33,10 +36,12 @@
             <li>cursul cu bibliografia orientativa</li>
             <li>profesorul conducator si rolul sau</li>
             <li> investigatia personala</li>
-        </ol>
-            <div class="overlay1">
-      <div class="text1">Deadline: 30 Aprilie 2019</div>
-      </div>
+        <ol>
+          <select class="dropdown1">
+        <option value="0">Finalizata</option>
+        <option value="1">In progres</option>
+        <option value="2">Neinceput</option>
+      </select>
       </div>
       <div class="Etapa2 active_project"> 
        <h1>Informarea si documentarea</h1>
@@ -46,10 +51,12 @@
             <li> ierarhizarea informatiei</li>
             <li>    încadrarea în context</li>
             <li>formarea unei competente informational-documentare</li>
-        </ol>
-            <div class="overlay2">
-      <div class="text2">Deadline: 30 Aprilie 2019</div>
-      </div>
+        <ol>
+          <select class="dropdown1">
+            <option value="0">Finalizata</option>
+            <option value="1">In progres</option>
+            <option value="2">Neinceput</option>
+         </select>
       </div>
       <div class="Etapa3 work_in_progress">
        <h1> Intocmirea planului detaliat al lucrarii </h1>
@@ -58,10 +65,12 @@
             <li>cautarea unui model existent</li>
             <li>stabilirea structurii generale a planului (introducere, cuprins/tratare, concluzii/încheiere)</li>
             <li>examinarea critica a datelor cunoscute</li>
-        </ol>
-            <div class="overlay3">
-      <div class="text3">Deadline: 30 Aprilie 2019</div>
-      </div>
+        <ol>
+           <select class="dropdown1">
+            <option value="0">Finalizata</option>
+            <option value="1">In progres</option>
+            <option value="2">Neinceput</option>
+         </select>
     </div>
       <div class="Etapa4 not_working">
        <h1>Elaborarea primei forme a lucrarii</h1>
@@ -70,9 +79,24 @@
        		<li>redactarea propriu-zisa în prima forma</li>
        		<li>dezvoltarea aplicatiei</li>
        </ol>
-        <div class="overlay4">
-      <div class="text4">Deadline: 30 Aprilie 2019</div>
-      </div>
+       <select class="dropdown1">
+        <option value="0">Finalizata</option>
+        <option value="1">In progres</option>
+        <option value="2">Neinceput</option>
+      </select>
+    </div>
+     <div class="Etapa5 not_working">
+       <h1>Elaborarea finala a întregii lucrari</h1>
+       <ol>
+       		<li>întocmirea foii de titlu</li>
+       		<li>cuprinsul</li>
+       		<li>prezentarea externa</li>
+       </ol>
+       <select class="dropdown1">
+        <option value="0">Finalizata</option>
+        <option value="1">In progres</option>
+        <option value="2">Neinceput</option>
+      </select>
     </div>
      </div>
      
@@ -84,22 +108,10 @@
             <li class="active">Documentare</li>
             <li class="working">Intocmirea planului</li>
             <li>Elaborarea initiala</li>
+             <li>Elaborarea finala</li>
           </ul>
     </div>
-    <h1>Zona editare etape</h1>
-    <div class="edit-etape">
-    	<h1 class="titlu">Alege etapa</h1>
-    	<h1 class="titlu1">Modifica continut</h1>
-    	<textarea class="textarea"></textarea>
-    	<button class="buton-edit">Modifica</button>
-    	 <select class="dropdown">
-		    <option value="0">Selecteaza etapa:</option>
-		    <option value="1">Schitarea planulu</option>
-		    <option value="2">Documentare</option>
-		    <option value="3">Intocmirea planului</option>
-		    <option value="4">Elaborarea initiala</option>
-		    <option value="5">Elaborarea finala</option>
-		  </select>
-    </div>
+	<h1>Editare in git</h1>
+	<img src="Resources\git.png" id="img">
   </body>
 </html>
