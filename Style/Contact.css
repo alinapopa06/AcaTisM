@@ -185,7 +185,7 @@ a.active {
 	font-weight: bold;
 }
 
-@media screen and (max-width: 992px)
+@media screen and (max-width: 970px)
 {
   .jumbotron h1{
 	   font-size: 18pt;
@@ -193,30 +193,31 @@ a.active {
   h1{
 	  font-size: 15pt;
   }
-	.grid-container{
-		grid-template-rows: 0.1fr 1.2fr 0.1fr 1.2fr 0.1fr 1.2fr 0.1fr;
-	}
-	.progressbar li{
-		font-size:10px;
-	}
-	.progressbar li:before {
-  content: counter(step);
-  counter-increment: step;
-  width: 30px;
-	height: 30px;
-	line-height:30px;
-	}
-	h1.titlu
-	{
-		font-size:12pt;
-	}
-	h1.titlu1
-	{
-		font-size:12pt;
-	}
-	
+  .studentstyle p {
+    font-weight: bold;
+    text-align: center;
+    font-size: 15px;
+    color: white;
 }
-@media screen and (max-width: 635px)
+    .Continut li
+	{
+			padding-top: 5px;
+			font-size: 15px;
+
+	}
+	a {
+    font-size: 15px;
+	}
+	.Continut span 
+	{
+    font-size: 15px;
+	}
+	.Continut ul
+	{
+		padding-left: 1.5em;
+	}
+}
+@media screen and (max-width: 760px )
 {
 	.menu{
 		grid-template-columns: 10% 15% 15% 15% 15% 15% 15%;
@@ -234,11 +235,77 @@ a.active {
 		padding-left:0px;
 		padding-top:5px;
 	}
-		
+	.studentstyle p {
+    font-weight: bold;
+    text-align: center;
+    font-size: 15px;
+    color: white;
 }
-@media screen and (max-width: 375px)
+    .Continut li
+	{
+			padding-top: 2px;
+			font-size: 10px;
+
+	}
+	a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 10px;
+    padding: 1em;
+	}
+	.Continut span {
+    font-size: 10px;
+}
+}
+
+@media screen and (max-width: 450px)
 {
+  .progressbar li{
+    font-size:7px;
+  }
+
 	.menu{
 		font-size: 12px;
 	}
+}
+
+@media screen and (max-width: 560px )
+{
+	.menu{
+		grid-template-columns: 10% 15% 15% 15% 15% 15% 15%;
+	}
+	.menu a
+	{
+		font-size: 7pt;
+	}
+	#fii{
+
+		padding-top:4px;
+    width: 60%;
+	}
+	#univ{
+		padding-left:0px;
+		padding-top:4px;
+	}
+	.studentstyle p {
+    font-weight: bold;
+    text-align: center;
+    font-size: 13px;
+    color: white;
+}
+    .Continut li
+	{
+			padding-top: 1px;
+			font-size: 8px;
+
+	}
+	a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 8px;
+    padding: 1em;
+	}
+	.Continut span {
+    font-size: 8px;
+}
 }
