@@ -13,7 +13,7 @@ body {
 	margin: auto;
 	padding-top: 30px;
 	padding-bottom: 30px; 
-	padding-left: 50px;
+	padding-left: 5%;
 	font-size: 40px;
 
 }
@@ -202,7 +202,7 @@ body {
 	width: 70%;
 	padding-left: 30px;
 	}
-.menu a {
+ a {
     color: #fff;
     text-decoration: none;
     font-size: 18px;
@@ -459,28 +459,42 @@ h1{
 	}
 	
 }
-@media screen and (max-width: 635px)
+
+@media screen and (max-width: 450px)
 {
-	.menu{
-		grid-template-columns: 10% 15% 15% 15% 15% 15% 15%;
+  .progressbar li{
+    font-size:7px;
+  }
+	.grid-container{
+		grid-template-rows: 0.1fr 0.7fr 0.1fr 0.7fr 0.1fr 0.7fr 0.1fr;
 	}
-	.menu a
-	{
+	h1{
+		font-size: 10pt;
+	}
+	li{
 		font-size: 8pt;
 	}
-	#fii{
-
-		padding-top:5px;
-	}
-	#univ{
-		padding-left:0px;
-		padding-top:5px;
-	}
-		
-}
-@media screen and (max-width: 375px)
-{
-	.menu{
+	.menu a{
 		font-size: 12px;
+	}
+	.active_project
+	{
+		padding-right:10%;
+	}
+	.work_in_progress{
+	  padding-right:10%;
+	}
+	.not_working
+	{
+	  padding-right:10%;
+	}
+	.buton-edit{
+		font-size: 7pt;
+		width:80%;
+	}
+	.dropdown1
+	{
+	  width: 30%;
+	  height: 10%;
 	}
 }
