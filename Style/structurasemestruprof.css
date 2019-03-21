@@ -26,7 +26,14 @@ html, body {
     top:0;
     z-index: 1;
   }
+  .menu a{
+    text-align: center;
+    padding: 10%;
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
 
+  }
  .menu a{
   color: #fff;
   text-decoration: none;
@@ -61,33 +68,7 @@ a.active {
     width: 100%;
     height: 380px;
 }
-/* .sfaturi{
-    background-color: white;
-    opacity: 0.4;
-     margin: 0%;
-    padding: 0%;
-    width: 100%;
-    height: 75px;
-    border-radius: 40px;
-    display: grid;
-    justify-content: center;
-    grid-template-columns: auto auto;    
-}
-.sfat a{
-     margin: 14px;
-    padding: 0px; 
-    font-size: 30px;
-    font-family: "Comic Sans MS", cursive, sans-serif;
-    color:rgb( rgb(20, 20, 92));
-    
-}
 
-#bach
-{
-    width: 70px;
-    height: 70px;
-  
-} */
 
 .buttons
 {
@@ -102,7 +83,7 @@ a.active {
 
   
 }
-  
+
 .buttons a{
   display: block;
   color: black;

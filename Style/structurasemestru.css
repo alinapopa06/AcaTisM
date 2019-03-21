@@ -26,14 +26,14 @@ html, body {
     top:0;
     z-index: 1;
   }
-.menu a{
-  color: #fff;
-  text-decoration: none;
-  font-size: 18px;
-  padding: 1em;
-  text-align: center;
- 
-}
+  .menu a{
+    text-align: center;
+    padding: 10%;
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+
+  }
 a.active {
 
   background-color: #e74c3c;
@@ -74,6 +74,7 @@ a.active {
 
   
 }
+
   
 .buttons a{
   display: block;

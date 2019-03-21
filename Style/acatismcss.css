@@ -25,15 +25,15 @@ html, body {
     top:0;
     z-index: 1;
   }
+  .menu a{
+    text-align: center;
+    padding: 10%;
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
 
-.menu a{
-  color: #fff;
-  text-decoration: none;
-  font-size: 18px;
-  padding: 1em;
-  text-align: center;
- 
-}
+  }
+
 a.active {
 
   background-color: #e74c3c;
@@ -71,7 +71,7 @@ a.active {
   text-align: center;  
   grid-column: 1/2;
   grid-row:1/2;
-  border-radius: 40px;
+  border-radius: 25px;
 
 }
   
@@ -109,14 +109,12 @@ a.active {
 
 .continut
 {
-  
    font-size: 17px;
    text-align: center;
    margin: 2px;
    padding: 10px;
    background: rgba(8, 64, 82, 0.4);
-   border-radius: 40px;
-  
+   border-radius: 25px;
 }
 
 .continut dt
@@ -135,10 +133,18 @@ a.active {
 .prezentare
 {
   background: rgba(8, 64, 82, 0.4);
-   border-radius: 30px;
+   border-radius: 25px;
    grid-column: 3;
    grid-row: 1/2;
    padding: 6px;
+ text-justify:auto;
+ text-indent: 40px;
+}
+
+.prezentare ol{
+  font-weight: bold;
+  text-align: center;
+  list-style-position: inside;
 }
  
 @media screen and (max-width: 635px)
