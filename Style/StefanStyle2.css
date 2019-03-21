@@ -19,7 +19,7 @@ body {
 }
 .overlay1 {
   position: absolute;
-  top: 71.2%;
+ top: 37%;
   left: 32.6%;
   opacity: 0.7;
   border-radius:20px;
@@ -44,7 +44,7 @@ body {
 }
 .overlay2 {
   position: absolute;
-  top: 71.2%;
+  top: 37%;
   right: 9.5%;
   opacity: 0.7;
   border-radius:20px;
@@ -69,7 +69,7 @@ body {
 }
 .overlay3 {
   position: absolute;
-  top: 115%;
+  top: 84%;
   left: 32.6%;
   opacity: 0.7;
   border-radius:20px;
@@ -94,7 +94,7 @@ body {
 }
 .overlay4 {
   position: absolute;
-  top: 115%;
+   top: 84%;
   right: 9.5%;
   opacity: 0.7;
   border-radius:20px;
@@ -117,31 +117,7 @@ body {
   transform: translate(-50%, -50%);
   text-align: center;
 }
-.overlay5 {
-  position: absolute;
-  top: 86.8%;
-  left: 32.6%;
-  opacity: 0.7;
-  border-radius:20px;
-  background-color: #e74c3c;
-  overflow: hidden;
-  width: 15%;
-  height: 9%;
-  transform: scale(0);
-  transition: .3s ease;
-}
-.Etapa5:hover .overlay5 {
-  transform: scale(1);
-}
-.text5 {
-  color: white;
-  font-size: 20px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-}
+
 
 .content p{
   text-align: left;
@@ -188,7 +164,7 @@ body {
   width: 70%;
   padding-left: 30px;
   }
-.menu a {
+a {
     color: #fff;
     text-decoration: none;
     font-size: 18px;
@@ -217,9 +193,10 @@ a.active:hover {
   grid-row: 1;
 }
 .grid-container {
+	position:relative;
   display: grid;
   grid-template-columns: 0.4fr 1.6fr 0.2fr 1.6fr 0.4fr;
-  grid-template-rows: 0.4fr 1.2fr 0.3fr 1.2fr 0.3fr 0.2fr;
+  grid-template-rows: 0.4fr 1.2fr 0.3fr 1.2fr 0.2fr;
   grid-template-areas: ". . . . ." ". Etapa1 . Etapa2 ." ". . . . ." ". Etapa3 . Etapa4 ." ". . . . .";
 }
 
@@ -409,7 +386,7 @@ h1{
     font-size: 15pt;
   }
   .grid-container{
-    grid-template-rows: 0.1fr 1.2fr 0.1fr 1.2fr 0.1fr 1.2fr 0.1fr;
+    grid-template-rows: 0.1fr 1.2fr 0.1fr 1.2fr 0.1fr 0.1fr;
   }
   .progressbar li{
     font-size:10px;
@@ -429,6 +406,18 @@ h1{
   {
     font-size:12pt;
   }
+  .text4 {
+	  font-size:8pt;
+  }
+   .text3 {
+	  font-size:8pt;
+  }
+   .text2 {
+	  font-size:8pt;
+  }
+   .text1 {
+	  font-size:8pt;
+  }
   
 }
 @media screen and (max-width: 635px )
@@ -436,6 +425,9 @@ h1{
   .menu{
     grid-template-columns: 10% 15% 15% 15% 15% 15% 15%;
   }
+  .grid-container{
+		grid-template-rows: 0.1fr 1.2fr 0.1fr 1.2fr 0.1fr 0.1fr;
+	}
   .menu a
   {
     font-size: 8pt;
@@ -456,8 +448,31 @@ h1{
   .progressbar li{
     font-size:7px;
   }
-
-  .menu{
-    font-size: 12px;
-  }
+	.grid-container{
+		grid-template-rows: 0.1fr 0.7fr 0.1fr 0.7fr 0.1fr 0.7fr 0.1fr;
+	}
+	h1{
+		font-size: 10pt;
+	}
+	li{
+		font-size: 8pt;
+	}
+	.menu{
+		font-size: 12px;
+	}
+	.active_project
+	{
+		padding-right:10%;
+	}
+	.work_in_progress{
+	  padding-right:10%;
+	}
+	.not_working
+	{
+	  padding-right:10%;
+	}
+	.buton-edit{
+		font-size: 7pt;
+		width:80%;
+	}
 }

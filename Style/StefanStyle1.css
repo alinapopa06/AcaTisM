@@ -188,7 +188,7 @@ body {
 	width: 70%;
 	padding-left: 30px;
 	}
-.menu a {
+a {
     color: #fff;
     text-decoration: none;
     font-size: 18px;
@@ -379,7 +379,7 @@ h1{
 .buton-edit
 {
   grid-area: buton-edit;
-  width: 60%;
+  width: 40%;
   height: 20%;
   text-align: center;
   margin-top: 20%;
@@ -450,6 +450,10 @@ h1{
 		padding-left:0px;
 		padding-top:5px;
 	}
+	.buton-edit{
+		font-size: 10pt;
+		width:80%;
+	}
 		
 }
 @media screen and (max-width: 450px)
@@ -457,8 +461,31 @@ h1{
   .progressbar li{
     font-size:7px;
   }
-
+	.grid-container{
+		grid-template-rows: 0.1fr 0.7fr 0.1fr 0.7fr 0.1fr 0.7fr 0.1fr;
+	}
+	h1{
+		font-size: 10pt;
+	}
+	li{
+		font-size: 8pt;
+	}
 	.menu{
 		font-size: 12px;
+	}
+	.active_project
+	{
+		padding-right:10%;
+	}
+	.work_in_progress{
+	  padding-right:10%;
+	}
+	.not_working
+	{
+	  padding-right:10%;
+	}
+	.buton-edit{
+		font-size: 7pt;
+		width:80%;
 	}
 }
