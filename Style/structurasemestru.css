@@ -11,19 +11,21 @@ html, body {
   }
  
 
- .menu {
-  display: grid;
-  grid-template-columns: 15% 17.5% 17.5% 17.5% 17.5% 15%;
-  margin: 0;
-  padding: 0;
-  width: 100%;
-  height: 3.7em;
-  margin: auto;
-  align-items: center;
- background-image: linear-gradient(to right, #071731, #132d57, #071731);
-  position: sticky;
-  top:0;
-}
+  .menu {
+    display: grid;
+    grid-template-columns: 15% 14% 14% 14% 14% 14% 15%;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 10%;
+    margin: auto;
+    align-items: center;
+    background-color: #2c3e50;
+    background-image: linear-gradient(to right, #071731, #132d57, #071731);
+    position: sticky;
+    top:0;
+    z-index: 1;
+  }
 .menu a{
   color: #fff;
   text-decoration: none;
@@ -58,33 +60,6 @@ a.active {
     width: 100%;
     height: 380px;
 }
-/* .sfaturi{
-    background-color: white;
-    opacity: 0.4;
-     margin: 0%;
-    padding: 0%;
-    width: 100%;
-    height: 75px;
-    border-radius: 40px;
-    display: grid;
-    justify-content: center;
-    grid-template-columns: auto auto;    
-}
-.sfat a{
-     margin: 14px;
-    padding: 0px; 
-    font-size: 30px;
-    font-family: "Comic Sans MS", cursive, sans-serif;
-    color:rgb( rgb(20, 20, 92));
-    
-}
-
-#bach
-{
-    width: 70px;
-    height: 70px;
-  
-} */
 
 .buttons
 {
@@ -170,5 +145,142 @@ a.active {
   color: #24282e;
 }
 
+@media screen and (max-width: 635px)
+{
+  .content img{
+    width: 100%;
+    height: 100px;
+}
+	.menu{
+		grid-template-columns: 10% 15% 15% 15% 15% 15% 15%;
+	}
+	.menu a
+	{
+		font-size: 8pt;
+	}
+	#fii{
+
+    padding-top:5px;
+    padding-left: 1px;
+    width: 70%;
+	}
+	#univ{
+		padding-left:2px;
+		padding-top:3px;
+	}
+		
+}
+@media screen and (max-width: 375px)
+{
+	.menu{
+		font-size: 12px;
+	}
+}
+
+@media screen and (max-width: 375px)
+{
+	.menu{
+		font-size: 12px;
+	}
+}
+
+@media screen and (max-width:700px)
+{
+  
+  .buttons
+  {
+    text-align: left;  
+  
+  }
+    
+  .buttons a{
+    
+    font-size: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  } 
+
+}
+@media screen and (max-width:395px)
+{
+  
+  .buttons
+  {
+    text-align: left;  
+    font-size: 7px;
+    grid-column: 1/5;
+    grid-row:1;
+     display: flex;
+    flex-direction: row;
+    justify-content:center;
+    align-items: center; 
+    border-radius: 10px;  
+  }
+    
+  .buttons a{
+    font-size:7px;
+
+  } 
+
+}
+
+@media screen and (max-width:700px)
+{
+  .continutgeneral
+{
+  font-size: 10px;
+  
+}
+.continutsem1
+{
+  
+   font-size: 10px;
+   text-align: left;
+
+}
+.continutsem2
+{
+  
+   font-size: 10px;
+   text-align: left;
+
+}
 
 
+@media screen and (max-width:395px)
+{
+  .continutgeneral
+{
+  font-size: 7px;
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+  grid-template-rows: 10% 40% 40%;
+  
+
+}
+.continutsem1
+{
+  
+   font-size: 7px;
+   grid-row:2/4;
+   grid-column: 1/3;
+   text-align: left;
+
+}
+.continutsem2
+{
+  
+   
+   grid-row:2/4;
+   grid-column: 3/5;
+   font-size: 7px;
+
+
+}
+
+
+
+
+}
