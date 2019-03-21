@@ -449,7 +449,7 @@ h1{
     font-size:7px;
   }
 	.grid-container{
-		grid-template-rows: 0.1fr 0.7fr 0.1fr 0.7fr 0.1fr 0.7fr 0.1fr;
+		grid-template-rows: 0.1fr 0.7fr 0.1fr 0.7fr 0.1fr 0.1fr;
 	}
 	h1{
 		font-size: 10pt;
