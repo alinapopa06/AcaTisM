@@ -9,10 +9,6 @@
   </head>
   <body prefix="schema: http://schema.org">
     <header>
-      <div class="banner">
-        <img src="scholarly-html.svg" width="227" height="50" alt="Scholarly HTML logo">
-        <div class="status">Community Draft</div>
-      </div>
       <h1>Academic Thesis Manager</h1>
     </header>
     
@@ -87,12 +83,23 @@ Din perspectiva unui student, acesta va putea vizualiza toate proiectele propuse
           In aceasta pagina se va putea urmari progresul proiectului.
          <br>
          <br>
-          Studentul va putea vizualiza etapele propuse de catre profesor si va putea adauga comentarii la o anumita etapa sau va putea schimba statusul etapei.
+          Studentul va putea vizualiza etapele propuse de catre profesor si va putea adauga comentarii la o anumita etapa sau va putea schimba statusul etapei. In urma acestei actiuni profesorul va fi notificat de schimbarile facute prin email cat si in interiorul aplicatie.
           <br>
           <br>
-          Profesorul va putea vedea toti studentii arondati lui si etapele fiecarui proiect în parte. Profesorul poate adauga/edita etape, poate seta deadline-ul fiecarei etape sau poate vizualiza progresul proiectului prin GitHub.
+          Profesorul va putea vedea toti studentii arondati lui si etapele fiecarui proiect în parte. Profesorul poate adauga/edita etape, poate seta deadline-ul fiecarei etape sau poate vizualiza progresul proiectului prin GitHub. Studentul va fi notificat de schimbarile facute de profesor pentru a putea fi la curent cu noile cerinte.
           </p>
         </section>
+         <section id="etape">
+        <h3>Pagina Contact</h3>
+        <p>
+        Din perspectiva unui student, acesta va putea vizualiza tabele cu toti profesorii sau dupa un anumit
+	  filtru. In tabelel respective avem informatii despre materiile de interes, cabinetul in care-l putem gasi pe respectivul indrumator, e-mail-ul lui si pagina lui personala.
+	  <br>
+	  <br>  
+	   Din perspectiva unui profesor, acesta va putea vizualiza informatii despre studentii pe care ii indruma. 
+	   Mai exact, poate vedea tipul de proiect licenta/master, anul si grupa din care face parte studentul si adresa de e-mail.
+        </p>
+    </section>
       </section>
      
       <section id="tehnologii">
@@ -102,9 +109,38 @@ Din perspectiva unui student, acesta va putea vizualiza toate proiectele propuse
           <li> 	PHP </li>
           <li> 	MySql </li>
           <li> 	HTML si CSS pentru partea de front-end </li>
+           <li> JavaScript </li>
           </ul> <p>
         </section>
 
+ 	<section id="tehnologii">
+        <h3>Impartirea task-urilor</h3>
+       <section id="etape">
+       	<h3>Bolota Stefan</h3>
+       	<ul>
+       		<li>Gestionarea bazei de date</li>
+       		<li>Integrare GitHub</li>
+       		<li>Implementare functie admin</li>
+       </section> 
+        <section id="etape"><h3>Dumitrescu Malina</h3></section>
+        <ul>
+        	<li>Notificare prin atom</li>
+        	<li>Pagina de etape</li>
+        	<li>Parsare xml pentru pagina de acasa</li>
+        </ul>
+        <section id="etape"><h3>Popa Alina-Mihaela</h3></section>
+        <ul>
+        	<li>Cerintele profesorilor si formular pentru acestea</li>
+        	<li>Filtrarea proiectelor</li>
+        	<li>Propunerea proiectelor</li>
+        </ul>
+        <section id="etape"><h3>Cristea Rares </h3></section>
+        <ul>
+        	<li>Notificari prin e-mail</li>
+        	<li>Pagina de login</li>
+        	<li>Pagina de etape</li>
+        	<li>Pagina de contact</li>
+      </section>
       <section id="use-case">
         <h3>Diagrame use case</h3>
         <br>
@@ -118,17 +154,23 @@ Din perspectiva unui student, acesta va putea vizualiza toate proiectele propuse
       <section id="uml">
         <h3>Diagrama UML</h3>
         <br>
-        <img src="santier.jpg" alt="UML">
+        <img src="uml.png" alt="UML" width="100%">
       </section>
+       <section id="uml">
+        <h3>Diagrama MVC</h3>
+         <img src="mvc.png" alt="UML" width="120%">
+    </section>
     </section>
     <section id="tehnologii">
-        <h3>VA URMA</h3>
-        <p>
-        
-          va urma.
-          
-        <p>
+        <h3>Surse externe</h3>
+        <section>
+        	 <h3>GitHub</h3>
+        	 <p>
+        	In pagina unde vor putea fi vizualizate etapele proiectelor se va putea vizualiza si informatii aditionale de pe git, pentru ca profesorul sa poata vizualiza progresul proiectului. Cand un student va face o modificare in repository-ul de pe git, profesorul lui indrumator va primi un mail cu detalii despre acea schimbare.
+        	Pentru aceasta functionalitate vom folosi webhook-uri de la GitHub.
+       		 <p>
         </section>
+      </section>
 
   </body>
 </html>
