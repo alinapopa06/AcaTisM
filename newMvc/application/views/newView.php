@@ -2,7 +2,7 @@
 	
     <div id="content">
         
-        <h1>Welcome to PIP</h1>
+        <h1>My name is  <?php echo $nume . " " . $prenume ?> </h1>
     
     </div>
 

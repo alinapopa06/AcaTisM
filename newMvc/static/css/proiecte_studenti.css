@@ -1,0 +1,148 @@
+.menu {
+	display: grid;
+  grid-template-columns: 15% 14% 14% 14% 14% 14% 15%;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 10%;
+  margin: auto;
+  align-items: center;
+  background-image: linear-gradient(to right, #071731, #132d57, #071731);
+  position: sticky;
+  top:0;
+}
+.menu a{
+	text-align: center;
+	padding:10%;
+}
+#fii
+{
+	padding-left: 20px;
+	width: 50%;
+}
+#univ{
+	width: 70%;
+	padding-left: 30px;
+	}
+a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 1em;
+  }
+a.active {
+  background-color: #e74c3c;
+}
+.menu a:hover {
+  background-color: gray;
+}
+
+.hover-content {
+  display:none;
+}
+.parent:hover .hover-content {
+  display:block;
+  color: 	#000;
+}
+
+.parent{
+  font-size:15pt;
+  color: #113150;
+  font-style: italic;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'PT Sans', Arial, Verdana;
+  background-color: #eee;
+}
+
+.asi{
+  width:25%;
+  position: fixed;
+  top:9%;
+  background-color: rgb(144, 170, 205);
+  padding-left:1%;
+  padding-top:1%;
+  height:100%;
+  right:0;
+
+}
+
+.content{
+  padding-left: 10%;
+  padding-right:32%;
+  padding-top:1%;
+}
+
+.title{
+  padding-top:1%;
+  padding-bottom:1%;
+padding-left:2%;
+border-color: #000;
+border-radius:15px;
+font-size:20pt;
+background-image: linear-gradient(to left, rgba(255,0,0,0), #e2766a);;
+}
+
+.continut
+{
+  background-color:rgb(144, 170, 205);
+  padding-top:1%;
+  padding-bottom:1%;
+padding-left:2%;
+padding-right:2%;
+text-indent: 4%;
+text-align:justify;
+margin-bottom: 2%;
+border-color: black;
+border-radius:15px;
+}
+
+#text
+{
+  width: 90%;
+height: 20%;
+}
+
+.tit
+{
+  font-weight: bold;
+}
+
+@media screen and (max-width: 635px)
+{
+  .menu{
+  grid-template-columns: 10% 15% 15% 15% 15% 15% 15%;
+  }
+  .menu a
+  {
+  font-size: 8pt;
+  }
+}
+
+@media screen and (max-width: 375px)
+{
+	.menu{
+		font-size: 12px;
+  }
+  .content
+  {
+    padding-left:2%;
+    font-size:12px;
+  }
+  .title{
+    font-size:17px;
+  }
+  h2{
+    font-size:17px;
+  }
+  p {
+    font-size:12px;
+  }
+
+}

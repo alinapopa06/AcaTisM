@@ -8,13 +8,12 @@ class Model {
 	{
 		global $config;
 		
-		$this->connection = mysql_pconnect($config['db_host'], $config['db_username'], $config['db_password']) or die('MySQL Error: '. mysql_error());
-		mysql_select_db($config['db_name'], $this->connection);
+		$this->connection = new mysqli($config['db_host'], $config['db_username'], $config['db_password'],$config['db_name']) or die('MySQL Error: '. mysql_error());
 	}
 
 	public function escapeString($string)
 	{
-		return mysql_real_escape_string($string);
+		return $this->connection->real_escape_string($string);
 	}
 
 	public function escapeArray($array)
@@ -45,10 +44,10 @@ class Model {
 	
 	public function query($qry)
 	{
-		$result = mysql_query($qry) or die('MySQL Error: '. mysql_error());
+		$result = mysqli_query($this->connection,$qry) or die('MySQL Error: '. mysql_error());
 		$resultObjects = array();
 
-		while($row = mysql_fetch_object($result)) $resultObjects[] = $row;
+		while($row = mysqli_fetch_array($result)) $resultObjects[] = $row;
 
 		return $resultObjects;
 	}

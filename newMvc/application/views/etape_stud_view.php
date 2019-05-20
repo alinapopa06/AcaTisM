@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ro">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="<?php echo BASE_URL; ?>static/css/StefanStyle_studenti.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Etape</title>
+  </head>
+  <body>
+   <nav class="menu">   
+          <div id="siglafii">
+            <img id="fii" src="<?php echo BASE_URL; ?>static/images/fiialb.png" alt="fii">
+          </div>
+                 <a href="acatism" >Acasa</a>
+                <a href="proiecte_studenti" >Proiecte</a>
+                <a href="Etape_start" class="active" >Etape</a>
+                <a href="Contact" >Contact</a>
+                 <a href="html">Logout</a>
+           <div id="siglauniv">
+            <img id="univ" src="<?php echo BASE_URL; ?>static/images/UNIV1.png" alt="universitate">
+          </div>
+    </nav>
+     <div class="content">
+        <div class="jumbotron">
+            <h1>Profilul meu</h1>
+            <p class="textdeco">Licenta</p>
+            <p class="detalii"><span class="textdeco">An de studiu:</span> II </p>
+            <p class="detalii"><span class="textdeco">Grupa:</span> A3</p>
+          </div>
+        </div>
+        <h1>Etapele mele</h1>
+   <div class="grid-container">
+      <div class="Etapa1 active_project">
+        <h1>Depistarea bibliografiei-schitarea planului</h1>
+        <ol>
+            <li>cursul cu bibliografia orientativa</li>
+            <li>profesorul conducator si rolul sau</li>
+            <li> investigatia personala</li>
+        </ol>
+          <select class="dropdown1">
+			<option value="0">Finalizata</option>
+			<option value="1">In progres</option>
+			<option value="2">Neinceput</option>
+		  </select>
+      </div>
+      <div class="Etapa2 active_project"> 
+       <h1>Informarea si documentarea</h1>
+        <ol>
+            <li> întocmirea fisierului propriu de documentare</li>
+            <li>clasificarea informatiei</li>
+            <li> ierarhizarea informatiei</li>
+            <li>    încadrarea în context</li>
+            <li>formarea unei competente informational-documentare</li>
+        </ol>
+          <select class="dropdown1">
+            <option value="0">Finalizata</option>
+            <option value="1">In progres</option>
+            <option value="2">Neinceput</option>
+         </select>
+      </div>
+      <div class="Etapa3 work_in_progress">
+       <h1> Intocmirea planului detaliat al lucrarii </h1>
+        <ol>
+            <li>planul se face într-o faza avansata a informarii si documentarii</li>
+            <li>cautarea unui model existent</li>
+            <li>stabilirea structurii generale a planului (introducere, cuprins/tratare, concluzii/încheiere)</li>
+            <li>examinarea critica a datelor cunoscute</li>
+        </ol>
+           <select class="dropdown1">
+            <option value="0">Finalizata</option>
+            <option value="1">In progres</option>
+            <option value="2">Neinceput</option>
+         </select>
+    </div>
+      <div class="Etapa4 not_working">
+       <h1>Elaborarea primei forme a lucrarii</h1>
+       <ol>
+       		<li>alegerea metodelor de lucru si formularea lor</li>
+       		<li>redactarea propriu-zisa în prima forma</li>
+       		<li>dezvoltarea aplicatiei</li>
+       </ol>
+       <select class="dropdown1">
+        <option value="0">Finalizata</option>
+        <option value="1">In progres</option>
+        <option value="2">Neinceput</option>
+      </select>
+    </div>
+     <div class="Etapa5 not_working">
+       <h1>Elaborarea finala a întregii lucrari</h1>
+       <ol>
+       		<li>întocmirea foii de titlu</li>
+       		<li>cuprinsul</li>
+       		<li>prezentarea externa</li>
+       </ol>
+       <select class="dropdown1">
+        <option value="0" class="drop">Finalizata</option>
+        <option value="1">In progres</option>
+        <option value="2">Neinceput</option>
+      </select>
+    </div>
+     </div>
+    <div class="container">
+        <h1>Progresul proiectului</h1>
+          <ul class="progressbar">
+          	 <li class="active">Schitarea planulu</li>
+            <li class="active">Documentare</li>
+            <li class="working">Intocmirea planului</li>
+            <li>Elaborarea initiala</li>
+             <li>Elaborarea finala</li>
+          </ul>
+    </div>
+	<h1>Editare in git</h1>
+	<img src="<?php echo BASE_URL; ?>static/images/git.png" id="img" alt="git">
+  </body>
+</html>
