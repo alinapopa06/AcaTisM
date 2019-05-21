@@ -15,6 +15,12 @@ class Controller {
 		$view = new View($name);
 		return $view;
 	}
+	public function loadError()
+	{
+		require(APP_DIR .'controllers/Eroare.php');
+		$error=new Eroare();
+		return $error;
+	}
 	
 	public function loadPlugin($name)
 	{

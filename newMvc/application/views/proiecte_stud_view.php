@@ -9,11 +9,11 @@
   <body>
     <nav class="menu">   
              <img id="fii" src="<?php echo BASE_URL; ?>static/images/fiialb.png" alt="fii"> 
-            <a href="acatism.html" >Acasă</a>
+            <a href="acatism" >Acasă</a>
             <a href="#" class="active">Proiecte</a>
-            <a href="Etape_studenti.html"  >Etape</a>
-            <a href="Contact.html" >Contact</a>
-            <a href="html.html"  >Logout</a>
+            <a href="Etape_studenti"  >Etape</a>
+            <a href="Contact" >Contact</a>
+            <a href="html"  >Logout</a>
             <img id="univ" src="<?php echo BASE_URL; ?>static/images/UNIV1.png" alt="univ">
     </nav>
 
@@ -24,7 +24,7 @@
                 <option value="Andrei Panu">Andrei Panu</option>
                 <option value="Lenuta Alboaie">Lenuța Alboaie</option>
             </select>
-            <form action="proiecte_studenti1.html"><button>Alegeti</button></form>
+            <form action="proiecte_studenti1"><button>Alegeti</button></form>
         
                 <h2>Propuneri</h2>
                         <p> Aici veți putea să vă scrieți propriile idei de proiecte, incluzând o descriere a acestora.</p>
