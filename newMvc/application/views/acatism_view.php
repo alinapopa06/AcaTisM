@@ -22,8 +22,8 @@
             <img id="fii" src="<?php echo BASE_URL; ?>static/images/fiialb.png" alt="FII">
                 
                 <a href="acatism" class="active" >Acasa</a>
-                <a href="proiecte_studenti" >Proiecte</a>
-                <a href="Etape_start" >Etape</a>
+                <a href="Proiecte_studenti" >Proiecte</a>
+                <a href="Etape_studenti" >Etape</a>
                 <a href="Contact" >Contact</a>
                 <a href="html">Logout</a>
             <img id="univ" src="<?php echo BASE_URL; ?>static/images/UNIV1.png" alt="UAIC">
