@@ -18,14 +18,6 @@
     </nav>
 
     <aside class="asi">
-            <h2>Alegerea proiectului</h2>
-            <p>Alegeti profesorul</p>
-            <select class="drop">
-                <option value="Andrei Panu">Andrei Panu</option>
-                <option value="Lenuta Alboaie">Lenuța Alboaie</option>
-            </select>
-            <form action="proiecte_studenti1"><button>Alegeti</button></form>
-        
                 <h2>Propuneri</h2>
                         <p> Aici veți putea să vă scrieți propriile idei de proiecte, incluzând o descriere a acestora.</p>
 						
@@ -41,8 +33,59 @@
   <main>
         <div class="content">
             
-            <h1>Profesori</h1>
-                <div id="listing">
+          
+
+                <?php
+                        if(!isset($eroare))
+                        {
+                                if(!isset($nr_prof))
+                                {
+                                        for ($i=0; $i < count($profesori) ; $i++) {
+                                        
+                                                echo " <h1>Profesori</h1>
+                                                <div id='listing'>
+                
+                                                <h2>"
+                                                . $profesori[$i]->prenume.' '
+                                                .$profesori[$i]->nume.
+                                                "</h2>";
+                                                for ($j=0; $j <count($profesori[$i]->proiecte) ; $j++) { 
+                                                echo  "<div class='title'>" .
+                                                $profesori[$i]->proiecte[$j]['nume_proiect']
+                                                ."</div>
+                                                <div class='continut'>".
+                                                $profesori[$i]->proiecte[$j]['descriere']."</div>";
+                                                ;
+                                                }
+                                                echo "</div>";
+                                        }
+                                }
+                                else
+                                {
+                                        echo "<div id='listing'>
+                                        <h2>"
+                                        . $profesori->prenume.' '
+                                        .$profesori->nume.
+                                        "</h2>";
+                                        for ($j=0; $j <count($profesori->proiecte) ; $j++) { 
+                                        echo  "<div class='title'>" .
+                                        $profesori->proiecte[$j]['nume_proiect']
+                                        ."</div>
+                                        <div class='continut'>".
+                                        $profesori->proiecte[$j]['descriere']."</div>";
+                                        ;
+                                        }
+                                        echo "</div>";
+                                }
+                        }
+                        else
+                        {
+                                echo  "<div id='listing'>
+                                <h2>". $eroare ."</h2>";
+                        }
+     
+                ?>
+               <!-- <div id="listing">
 
                           <h2>Andrei Panu</h2>
                     <div class="title">
@@ -119,7 +162,7 @@
 
                                 </div>
             </div>
-
+        -->
             <h1> Proiecte propuse de studenți </h1>
                     <ul>
                             <li class="parent">

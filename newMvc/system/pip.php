@@ -36,7 +36,6 @@ function pip()
         require_once(APP_DIR . 'controllers/' . $controller . '.php');
         $action = 'index';
     }
-	
 	// Create object and call method
 	$obj = new $controller;
     die(call_user_func_array(array($obj, $action), array_slice($segments, 2)));

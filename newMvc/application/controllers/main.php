@@ -10,7 +10,9 @@ class Main extends Controller {
 	function newMethod()
 	{
 		$template= $this->loadView("newView");
+
 		$template->render();
+
 	}
 }
 
