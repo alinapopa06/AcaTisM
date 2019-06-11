@@ -7,7 +7,6 @@ class Model {
 	public function __construct()
 	{
 		global $config;
-		
 		$this->connection = new mysqli($config['db_host'], $config['db_username'], $config['db_password'],$config['db_name']) or die('MySQL Error: '. mysql_error());
 	}
 
@@ -54,7 +53,7 @@ class Model {
 
 	public function execute($qry)
 	{
-		$exec = mysql_query($qry) or die('MySQL Error: '. mysql_error());
+		$exec = mysqli_query($this->connection,$qry) or die('MySQL Error: '. mysql_error());
 		return $exec;
 	}
     
