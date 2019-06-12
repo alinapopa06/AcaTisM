@@ -2,23 +2,18 @@
 <html lang="ro">
   <head>
     <meta charset="utf-8">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.0/jquery.min.js"></script>
     <link rel="stylesheet" href="<?php echo BASE_URL; ?>static/css/proiecte_studenti.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Proiecte</title>
   </head>
   <body>
-  
-  <script type="text/javascript" src='<?php echo BASE_URL; ?>static/js/functie_js.js'>
-
-  </script>
     <nav class="menu">   
              <img id="fii" src="<?php echo BASE_URL; ?>static/images/fiialb.png" alt="fii"> 
-            <a href="<?php echo BASE_URL; ?>acatism" >Acasă</a>
+            <a href="acatism" >Acasă</a>
             <a href="#" class="active">Proiecte</a>
-            <a href="<?php echo BASE_URL; ?>Etape_studenti"  >Etape</a>
-            <a href="<?php echo BASE_URL; ?>Contact" >Contact</a>
-            <a href="<?php echo BASE_URL; ?>html"  >Logout</a>
+            <a href="Etape_studenti"  >Etape</a>
+            <a href="Contact" >Contact</a>
+            <a href="<?php echo BASE_URL."Logout"; ?>">Logout</a>
             <img id="univ" src="<?php echo BASE_URL; ?>static/images/UNIV1.png" alt="univ">
     </nav>
 
@@ -39,40 +34,25 @@
         <div class="content">
             
           
-         <h1>Profesori</h1>
+
                 <?php
-                require(APP_DIR .'models/sendproject_model.php');
-                        if(isset($_POST['aplica']))
-                        {
-                                $obj= new sendproject_model();
-                                $res=$obj->send($_POST['prof_id'],$_POST['proiect_id'],$_SESSION['id_student']);
-                                if($res==1) echo "<script>alert('Ai aplicat cu succes la acest proiect.\\n Urmeaza ca profesorul sa evalueze cererea ta');</script>";
-                                else echo "<script>alert('Ai aplicat deja la acest proiect');</script>";
-                        }
                         if(!isset($eroare))
                         {
                                 if(!isset($nr_prof))
                                 {
                                         for ($i=0; $i < count($profesori) ; $i++) {
                                         
-                                                echo "
+                                                echo " <h1>Profesori</h1>
                                                 <div id='listing'>
                 
                                                 <h2>"
                                                 . $profesori[$i]->prenume.' '
                                                 .$profesori[$i]->nume.
-                                                "</h2>
-                                                ";
+                                                "</h2>";
                                                 for ($j=0; $j <count($profesori[$i]->proiecte) ; $j++) { 
-                                                echo  "
-                                                <form action='' method='POST'>
-                                                <input type='hidden' name='prof_id' value='".$profesori[$i]->id."'>
-                                                <input type='hidden' name='proiect_id' value='".$profesori[$i]->proiecte[$j]['id_proiect']."'><div class='title'>" .
+                                                echo  "<div class='title'>" .
                                                 $profesori[$i]->proiecte[$j]['nume_proiect']
-                                                ."
-                                                <input type='submit' class='button' name='aplica' value='Aplica'>
-                                                </form>
-                                                </div>
+                                                ."</div>
                                                 <div class='continut'>".
                                                 $profesori[$i]->proiecte[$j]['descriere']."</div>";
                                                 ;
@@ -86,16 +66,11 @@
                                         <h2>"
                                         . $profesori->prenume.' '
                                         .$profesori->nume.
-                                        "</h2> 
-                                        <form action='' method='POST'>
-                                         <input type='hidden' name='prof_id' value='".$profesori->id."'>";
+                                        "</h2>";
                                         for ($j=0; $j <count($profesori->proiecte) ; $j++) { 
-                                        echo  "<input type='hidden' name='proiect_id' value='".$profesori->proiecte[$j]['id_proiect']."'><div class='title'>" .
+                                        echo  "<div class='title'>" .
                                         $profesori->proiecte[$j]['nume_proiect']
-                                        ."
-                                        <input type='submit' class='button' name='aplica' value='Aplica'>
-                                        </form>
-                                        </div>
+                                        ."</div>
                                         <div class='continut'>".
                                         $profesori->proiecte[$j]['descriere']."</div>";
                                         ;
@@ -110,28 +85,20 @@
                         }
      
                 ?>
-               <!--   
-               <div id="listing">
+               <!-- <div id="listing">
 
                           <h2>Andrei Panu</h2>
-                          <form action='#' method='POST'>
-                        <input type="hidden" name="prof_id" value="1">
-                        <input type="hidden" name="proiect_id" value="3487">
                     <div class="title">
                         Academic Thesis Manager
-                        
-                        <input type="submit" class="button" name='aplica' value="Aplica">
-                        </form>
                     </div>
                     <div class="continut">
                            
  Să se realizeze o aplicație Web privind managementul tezelor de licență/master la nivelul unei facultăți. Din punctul de vedere al profesorului, sistemul va oferi posibilitatea gestionării temelor propuse și a studenților arondati, inclusiv crearea unei planificări a celor mai importante etape până la momentul susținerii. Pentru studenți, aplicația va fi capabilă să listeze/filtreze subiectele de interes pentru fiecare profesor în parte și să permită înscrierea unei persoane în vederea îndrumării, eventual conform unor cerințe prelabile. Sistemul va verifică îndeplinirea acestor cerințe, inclusiv va notifica -- via un flux Atom sau prin e-mail -- profesorul/studentul atunci când survin întârzieri în efectuarea unor activități (e.g., transmiterea unui raport preliminar) sau dacă apar actualizări -- de pildă, profesorul a plasat o lista de lecturi recomandate. De asemenea, aplicația va semnala posibile probleme privind variantele intermediare ale documentelor întocmite de student referitoare la format sau standarde de redactare. Progresul implementării tezei va putea fi monitorizat automat prin intermermediul unui sistem online de management de cod-sursă precum Github.
-                        
+
 
 
                     </div>
-                    </div>
-                     
+                       
                     <div class="title">
                         Web App Security Alerter
                     </div>
@@ -195,7 +162,7 @@
 
                                 </div>
             </div>
-        
+        -->
             <h1> Proiecte propuse de studenți </h1>
                     <ul>
                             <li class="parent">
@@ -212,7 +179,7 @@
                                     </li>
                     </ul> 
         </div>
-           -->
+           
         </main>
     </body>
 </html>

@@ -1,5 +1,5 @@
 <?php
-include APP_DIR.'class/profesor.php';
+//include APP_DIR.'class/profesor.php';
 class Proiecte_stud extends Model {
 
    public function getAllProfesor()

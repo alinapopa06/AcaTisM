@@ -21,6 +21,7 @@ function pip()
 	// Do our default checks
 	if(isset($segments[0]) && $segments[0] != '') $controller = $segments[0];
 	if(isset($segments[1]) && $segments[1] != '') $action = $segments[1];
+
 	// Get our controller file
 	$path = APP_DIR . 'controllers/' . $controller . '.php';
 	if(file_exists($path)){
@@ -29,16 +30,20 @@ function pip()
 		$controller = $config['error_controller'];
         require_once(APP_DIR . 'controllers/' . $controller . '.php');
 	}
+	
     
     // Check the action exists
     if(!method_exists($controller, $action)){
         $controller = $config['error_controller'];
         require_once(APP_DIR . 'controllers/' . $controller . '.php');
         $action = 'index';
-    }
-	// Create object and call method
+	}
+	
+     // Create object and call method
 	$obj = new $controller;
-    die(call_user_func_array(array($obj, $action), array_slice($segments, 2)));
+	die(call_user_func_array(array($obj, $action), array_slice($segments, 2)));
+	
 }
+
 
 ?>

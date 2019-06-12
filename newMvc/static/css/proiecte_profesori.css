@@ -7,9 +7,7 @@ body {
   font-family: 'PT Sans', Arial, Verdana;
   background-color: #eee;
 }
-input[type=submit] {
-  display: inline;
-}
+
 .menu {
 	display: grid;
   grid-template-columns: 15% 14% 14% 14% 14% 14% 15%;

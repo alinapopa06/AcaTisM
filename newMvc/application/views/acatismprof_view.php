@@ -1,36 +1,36 @@
-<!DOCTYPE html>
 
 <html lang="ro">
 
   <head>
 
     <meta charset="utf-8">
-
     <link rel="stylesheet" href="<?php echo BASE_URL; ?>static/css/acatismcss.css">
+
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
     
 
-    <title>Acatism</title>
+    <title>AcatismProf</title>
 
   </head>
 
   <body>
 
      <nav class="menu">   
-            
-            <img id="fii" src="<?php echo BASE_URL; ?>static/images/fiialb.png" alt="FII">
+     <img id="fii" src="<?php echo BASE_URL; ?>static/images/fii.png" alt="FII">
+
+     
                 
-                <a href="acatism" class="active" >Acasa</a>
-                <a href="Proiecte_studenti" >Proiecte</a>
-                <a href="Etape_studenti" >Etape</a>
-                <a href="Contact" >Contact</a>
+                <a href="acatismprof.html" class="active" >Acasa</a>
+                <a href="proiecte_profesori.html" >Proiecte</a>
+                <a href="Etape_start.html" >Etape</a>
+                <a href="Contact.html" >Contact</a>
                 <a href="<?php echo BASE_URL."Logout"; ?>">Logout</a>
-            <img id="univ" src="<?php echo BASE_URL; ?>static/images/UNIV1.png" alt="UAIC">
+                <img id="univ" src="<?php echo BASE_URL; ?>static/images/UNIV1.png" alt="UNIV">
     </nav>
 
     <div class="content">
-      <img src="<?php echo BASE_URL; ?>static/images/3.jpg" alt="Picture">
+    <img src="<?php echo BASE_URL; ?>static/images/3.jpg" alt="Picture">
     </div>
      <!-- <div class="sfaturi">
        <div class="sfat">
@@ -41,10 +41,8 @@
    <div class="continutgeneral">
 
        <div class="buttons">
-            <a href="structurasemestru.html" class="firstbutton">Structura anului universitar 2018-2019</a>
-            <a href="abslicenta.html" class="secondbutton">Absolvire iulie 2019-Licenta</a>
-            <a href="absmaster.html" class="thirdbutton">Absolvire iulie 2019-Master</a>
-            <a href="https://webmail-studs.info.uaic.ro/" class="fourthbutton">WEBMAIL-Studenti</a>
+            <a href="structurasemestruprof.html" class="firstbutton">Structura anului universitar 2018-2019</a>
+            <a href="https://webmail-studs.info.uaic.ro/" class="fourthbutton">WEBMAIL-Profesori</a>
 
          </div>
 
@@ -60,10 +58,11 @@
             <dt>Nivel</dt>
               <dd>Oferim o bază solidă în informatică şi în acelaşi timp o varietate mare de module informatice aliniate la cele mai noi tehnologii.                </dd>
              <dt>Flexibilitate              </dt>
-              <dd>  Modulele opţionale oferă studenţilor posibilitatea să se specializeze în direcţia preferată de ei. </dd>
-              </dl>
-          </div>
+              <dd>  Modulele opţionale oferă studenţilor posibilitatea să se specializeze în direcţia preferată de ei.  </dd>
 
+              </dl>
+              
+          </div>
           <div class="prezentare">
           <p>Facultatea noastră oferă specializare în Informatică, studii de 3 ani pentru licenţiere.
              La nivel de master, sunt disponibile cinci programe de tip master:</p>
@@ -87,3 +86,4 @@
   </body>
 
 </html>
+

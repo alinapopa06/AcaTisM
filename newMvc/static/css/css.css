@@ -152,4 +152,18 @@ button:hover {
     text-align: center;
     color: white;
   }
+
+  
+}
+#upwrong {
+  color:red;
+  font-weight: bold;
+
+
+}
+
+div .hidden{
+  display: none;
+  
+
 }
