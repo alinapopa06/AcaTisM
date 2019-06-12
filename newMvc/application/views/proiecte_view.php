@@ -47,12 +47,26 @@
           <div class="continut2">
                 <ul>
                     <?php
+                    if(isset($_POST['accepta']))
+                    {
+                        $model=new Proiecte_model();
+                        print_r($_POST);
+                        //header("Location:".BASE_URL."proiecte");
+                    }
+                    if(isset($_POST['refuza']))
+                    {
+                        $model=new Proiecte_model();
+                        $model->stergeCerere($_POST['cerere']);
+                        header("Location:".BASE_URL."proiecte");
+                    }
                         for ($i=0; $i <count($cereri) ; $i++) { 
                             echo "
                             <li class='parent'>".$cereri[$i]->prenume." ".$cereri[$i]->nume.
-                            "<div ><form class='form' action='https://webmail-studs.info.uaic.ro/'> <input type='submit' name='accepta' value='Accepta'></form>
-                            <form class='form' action='https://webmail-studs.info.uaic.ro/'><input type='submit' name='refuza' value='Refuza'></form>
-                                </div><div class='hover-content'>
+                            "<form action='#' method='Post'> 
+                            <input type='submit' name='accepta' value='Accepta'>
+                            <input type='submit' name='refuza' value='Refuza'>
+                            <input type='hidden' name='cerere' value='".$cereri[$i]->id."'></form>
+                                <div class='hover-content'>
                                 <ul>
                                 <li>Proiect:". $cereri[$i]->proiect[0]['nume_proiect']."</li>
                                 <li>Tip Proiect:".$cereri[$i]->proiect[0]['tip_proiect']."</li>
@@ -74,14 +88,45 @@
           <div class="continut3">
                 
                 <ul>
-                        <li class="parent">
+                        <?php
+                            
+                            if(isset($_POST['acceptap']))
+                            {
+                                $model=new Proiecte_model();
+                                $propunere=$model->query("SELECT * FROM propuneri where id_propunere=".$_POST['id_propunere']);
+                                $model->insertProiect($propunere);
+                                header("Location:".BASE_URL."proiecte");
+                            }
+                            if(isset($_POST['refuzap']))
+                            {
+                                $model=new Proiecte_model();
+                                $model->stergePropunere($_POST['id_propunere']);
+                                header("Location:".BASE_URL."proiecte");
+                            }
+                            for ($i=0; $i <count($propuneri) ; $i++) { 
+                                echo "<li class='parent'>
+                                " . $propuneri[$i]->titlu_proiect.
+                                "<form action='#' method='POST'>
+                                <input type='hidden' name='id_propunere' value='".$propuneri[$i]->id_propunere."'>
+                                <button name='acceptap'>Accepta</button>
+                                <button name='refuzap'>Refuza</button>
+                                </form>
+                                    <div class='hover-content'>
+                                    <ul>
+                                    <li>Nume:".$propuneri[$i]->nume_student."</li>
+                                    <li>Descriere:".$propuneri[$i]->mini_descriere."</li></ul>
+                                    </div>
+                            </li>";
+                            }
+                        ?>
+                        <!--<li class="parent">
                                 Garbage Management System
                                 <form action="https://webmail-studs.info.uaic.ro/"><button>Răspundeți</button></form>
                                     <div class="hover-content">
                                     <ul>
                                     <li>Nume:Bolotă Ștefan </li>
                                     <li>E-mail:stefan.bolota@info.uaic.com</li>
-                                            <li>Să se dezvolte o aplicație care să ofere funcționalitatea unui sistem de strângere a gunoaielor.</li>
+                                    <li>Să se dezvolte o aplicație care să ofere funcționalitatea unui sistem de strângere a gunoaielor.</li>
                                     </ul>
                                     </div>
                             </li>
@@ -97,7 +142,7 @@
                                     </div>
                                     
                             </li>
-                            
+                         -->   
                 </ul>
           </div>
         </div>

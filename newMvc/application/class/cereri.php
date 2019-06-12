@@ -3,14 +3,12 @@
 class Cerere {
     public $nume;
     public $prenume;
+    public $id;
     public $proiect;
-    function setNume($nume, $prenume)
+    function setNume($nume, $prenume,$id)
     {
         $this->nume=$nume;
         $this->prenume=$prenume;
-    }
-    function setId($id)
-    {
         $this->id=$id;
     }
     function setProject($proiect)

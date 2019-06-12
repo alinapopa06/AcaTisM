@@ -1,5 +1,5 @@
 <?php
-//include APP_DIR.'class/profesor.php';
+include APP_DIR.'class/profesor.php';
 class Proiecte_stud extends Model {
 
    public function getAllProfesor()
@@ -12,7 +12,7 @@ class Proiecte_stud extends Model {
             $prof->setId($result[$i]['id_profesor']);
             $id=$result[$i]['id_profesor'];
             $id = $this->escapeString($id);
-            $projects= $this->query('SELECT * FROM proiecte WHERE  id_profesor="'. $id .'"');
+            $projects= $this->query('SELECT * FROM proiecte WHERE descriere!=" " and id_profesor="'. $id .'"');
             $prof->setProjects($projects);
             array_push($profesori,$prof);
         }

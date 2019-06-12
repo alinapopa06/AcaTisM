@@ -14,6 +14,8 @@ class Proiecte extends Controller {
             $view_proiecte->set('cereri',$cereri);
             $proiecte=$model_proiecte->getProjects($_SESSION['id_profesor']);
             $view_proiecte->set('proiecte',$proiecte);
+            $propuneri=$model_proiecte->getPropuneri($_SESSION['id_profesor']);
+            $view_proiecte->set('propuneri',$propuneri);
             $view_proiecte->render();
         }
 		else

@@ -16,7 +16,6 @@ require(ROOT_DIR .'system/model.php');
 require(ROOT_DIR .'system/view.php');
 require(ROOT_DIR .'system/controller.php');
 require(ROOT_DIR .'system/pip.php');
-
 // Define base URL
 global $config;
 define('BASE_URL', $config['base_url']);
