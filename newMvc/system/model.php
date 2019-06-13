@@ -29,7 +29,7 @@ class Model {
 	
 	public function query($qry)
 	{
-		$result = mysqli_query($this->connection,$qry) or die('MySQL Error: '. mysql_error());
+		$result = mysqli_query($this->connection,$qry) or die('MySQL Error: '. mysqli_error());
 		$resultObjects = array();
 
 		while($row = mysqli_fetch_array($result)) $resultObjects[] = $row;

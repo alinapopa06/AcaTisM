@@ -6,7 +6,7 @@ class Proiecte extends Controller {
 	{
        
         $session=$this->loadHelper('session_helper');
-        if($session->get("id_profesor")!=NULL)
+        if($session->get("prof")!=NULL)
 		{
             $view_proiecte = $this->loadView('proiecte_view');
             $model_proiecte = $this->loadModel('Proiecte_model');
