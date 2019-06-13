@@ -10,6 +10,14 @@ body {
 input[type=submit] {
   display: inline;
 }
+.new
+{
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-bottom: 5%;
+  width: 80%;
+  align-self: auto;
+}
 .menu {
 	display: grid;
   grid-template-columns: 15% 14% 14% 14% 14% 14% 15%;

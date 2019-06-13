@@ -77,6 +77,25 @@ class Proiecte_model extends Model {
         $id=$this->escapeString($id);
         $this->execute("DELETE FROM cereri WHERE id_cerere=".$id);
     }
+    public function adaugaProiect($id_student,$id_proiect,$id_profesor)
+    {
+        try{
+            $sql="insert into proiect_student values (".$id_proiect.','.$id_student.','.$id_profesor.')';
+        echo $sql;
+        $this->execute($sql);
+        }
+        catch (Exception $e) {
+            echo 'Caught exception: ',  $e->getMessage(), "\n";
+        }
+        $sql="UPDATE `studenti` SET `id_proiect`='$id_proiect' where id_student='$id_student'";
+        $this->execute($sql);
+    }
+    public function getInfo($id_cerere)
+    {
+        $sql="SELECT * from cereri where id_cerere=".$id_cerere;
+        $res=$this->query($sql);
+        return $res;
+    }
    
 }
 ?>

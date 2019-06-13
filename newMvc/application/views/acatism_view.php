@@ -17,16 +17,14 @@
 
   <body>
 
-     <nav class="menu">   
-            
-            <img id="fii" src="<?php echo BASE_URL; ?>static/images/fiialb.png" alt="FII">
-                
-                <a href="acatism" class="active" >Acasa</a>
-                <a href="Proiecte_studenti" >Proiecte</a>
-                <a href="Etape_studenti" >Etape</a>
-                <a href="Contact" >Contact</a>
-                <a href="<?php echo BASE_URL."Logout"; ?>">Logout</a>
-            <img id="univ" src="<?php echo BASE_URL; ?>static/images/UNIV1.png" alt="UAIC">
+  <nav class="menu">   
+             <img id="fii" src="<?php echo BASE_URL; ?>static/images/fiialb.png" alt="fii"> 
+            <a href="<?php echo BASE_URL; ?>acatism" class="active">Acasă</a>
+            <a href="<?php echo BASE_URL; ?>proiecte_studenti" >Proiecte</a>
+            <a href="<?php echo BASE_URL; ?>etape_studenti"  >Etape</a>
+            <a href="<?php echo BASE_URL; ?>contact_profesori" >Contact</a>
+            <a href="<?php echo BASE_URL; ?>logout"  >Logout</a>
+            <img id="univ" src="<?php echo BASE_URL; ?>static/images/UNIV1.png" alt="univ">
     </nav>
 
     <div class="content">

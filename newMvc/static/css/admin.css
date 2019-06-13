@@ -1,0 +1,346 @@
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'PT Sans', Arial, Verdana;
+  background-color: #eee;
+}
+.content h1{
+	text-align: left;
+	margin: auto;
+	padding-top: 30px;
+	padding-bottom: 30px; 
+	padding-left: 50px;
+	font-size: 40px;
+
+}
+#universitate{
+	width: 100%;
+	height: 50%;
+
+}
+.content p{
+	text-align: left;
+	margin: auto;
+	font-size: 20px;
+	padding-bottom: 30px; 
+	padding-left: 50px;
+}
+.content
+{
+	overflow-x:hidden;
+}
+.jumbotron {
+	 background-color:  #e1e1e1;
+	 margin-top: 0px;
+}
+.jumbotron h1
+{
+	font-size: 250%;
+}
+
+.menu {
+	display: grid;
+  grid-template-columns: 15% 23.3% 23.3% 23.3% 15%;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 10%;
+  margin: auto;
+  align-items: center;
+  background-color: #2c3e50;
+  background-image: linear-gradient(to right, #071731, #132d57, #071731);
+  position: sticky;
+  top:0;
+  z-index: 1;
+}
+.menu a{
+	text-align: center;
+	padding: 10%;
+}
+#fii
+{
+	padding-left: 20px;
+		width: 50%;
+		height:5%;
+		
+}
+#univ{
+	height:5%;
+	width: 70%;
+	padding-left: 30px;
+	}
+a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+	padding: 1em;
+  }
+a.active {
+  background-color: #e74c3c;
+}
+.menu a:hover {
+  background-color: gray;
+}
+.studenti{
+	display: grid;
+	grid-template-columns: 10% 30% 20%  30% 10%;
+	grid-template-rows: auto;
+}
+
+
+/* Create two equal columns that floats next to each other */
+some-page-wrapper {
+  margin: 15px;
+  background-color: red;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 1;
+}
+.form-style-10{
+	width:450px;
+	padding:30px;
+	margin:40px auto;
+	background: #FFF;
+	border-radius: 10px;
+	-webkit-border-radius:10px;
+	-moz-border-radius: 10px;
+	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.13);
+	-moz-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.13);
+	-webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.13);
+}
+.form-style-10 .inner-wrap{
+	padding: 30px;
+	background: #F8F8F8;
+	border-radius: 6px;
+	margin-bottom: 15px;
+}
+.form-style-10 h1{
+	background: #2c3e50;
+	padding: 20px 30px 15px 30px;
+	margin: -30px -30px 30px -30px;
+	border-radius: 10px 10px 0 0;
+	-webkit-border-radius: 10px 10px 0 0;
+	-moz-border-radius: 10px 10px 0 0;
+	color: #fff;
+	text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.12);
+	font: normal 30px 'Bitter', serif;
+	-moz-box-shadow: inset 0px 2px 2px 0px rgba(255, 255, 255, 0.17);
+	-webkit-box-shadow: inset 0px 2px 2px 0px rgba(255, 255, 255, 0.17);
+	box-shadow: inset 0px 2px 2px 0px rgba(255, 255, 255, 0.17);
+	border: 1px solid #257C9E;
+}
+.form-style-10 h1 > span{
+	display: block;
+	margin-top: 2px;
+	font: 13px Arial, Helvetica, sans-serif;
+}
+.form-style-10 label{
+	display: block;
+	font: 13px Arial, Helvetica, sans-serif;
+	color: black;
+	margin-bottom: 15px;
+}
+.form-style-10 input[type="text"],
+.form-style-10 input[type="date"],
+.form-style-10 input[type="datetime"],
+.form-style-10 input[type="email"],
+.form-style-10 input[type="number"],
+.form-style-10 input[type="search"],
+.form-style-10 input[type="time"],
+.form-style-10 input[type="url"],
+.form-style-10 input[type="password"],
+.form-style-10 textarea,
+.form-style-10 select {
+	display: block;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	width: 100%;
+	padding: 8px;
+	border-radius: 6px;
+	-webkit-border-radius:6px;
+	-moz-border-radius:6px;
+	border: 2px solid #fff;
+	box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.33);
+	-moz-box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.33);
+	-webkit-box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.33);
+}
+
+.form-style-10 .section{
+	font: normal 20px 'Bitter', serif;
+	color: #2A88AD;
+	margin-bottom: 5px;
+}
+.form-style-10 .section span {
+	background: #2A88AD;
+	padding: 5px 10px 5px 10px;
+	position: absolute;
+	border-radius: 50%;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	border: 4px solid #fff;
+	font-size: 14px;
+	margin-left: -45px;
+	color: #fff;
+	margin-top: -3px;
+}
+.form-style-10 input[type="button"], 
+.form-style-10 input[type="submit"]{
+	background: #2A88AD;
+	padding: 8px 20px 8px 20px;
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	color: #fff;
+	text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.12);
+	font: normal 30px 'Bitter', serif;
+	-moz-box-shadow: inset 0px 2px 2px 0px rgba(255, 255, 255, 0.17);
+	-webkit-box-shadow: inset 0px 2px 2px 0px rgba(255, 255, 255, 0.17);
+	box-shadow: inset 0px 2px 2px 0px rgba(255, 255, 255, 0.17);
+	border: 1px solid #257C9E;
+	font-size: 15px;
+}
+.form-style-10 input[type="button"]:hover, 
+.form-style-10 input[type="submit"]:hover{
+	background: #2A6881;
+	-moz-box-shadow: inset 0px 2px 2px 0px rgba(255, 255, 255, 0.28);
+	-webkit-box-shadow: inset 0px 2px 2px 0px rgba(255, 255, 255, 0.28);
+	box-shadow: inset 0px 2px 2px 0px rgba(255, 255, 255, 0.28);
+}
+.form-style-10 .privacy-policy{
+	float: right;
+	width: 250px;
+	font: 12px Arial, Helvetica, sans-serif;
+	color: #4D4D4D;
+	margin-top: 10px;
+	text-align: right;
+}
+@media screen and (max-width: 970px)
+{
+  .jumbotron h1{
+	   font-size: 18pt;
+  }
+  h1{
+	  font-size: 15pt;
+  }
+  .studentstyle p {
+    font-weight: bold;
+    text-align: center;
+    font-size: 15px;
+    color: white;
+}
+    .Continut li
+	{
+			padding-top: 5px;
+			font-size: 15px;
+
+	}
+	a {
+    font-size: 15px;
+	}
+	.Continut span 
+	{
+    font-size: 15px;
+	}
+	.Continut ul
+	{
+		padding-left: 1.5em;
+	}
+}
+@media screen and (max-width: 635px )
+{
+	.menu{
+		grid-template-columns: 10% 15% 15% 15% 15% 15% 15%;
+	}
+	.menu a
+	{
+		font-size: 8pt;
+	}
+	#fii{
+
+		padding-top:5px;
+    width: 70%;
+	}
+	#univ{
+		padding-left:0px;
+		padding-top:5px;
+	}
+	.studentstyle p {
+    font-weight: bold;
+    text-align: center;
+    font-size: 15px;
+    color: white;
+}
+    .Continut li
+	{
+			padding-top: 2px;
+			font-size: 10px;
+
+	}
+	a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 10px;
+    padding: 1em;
+	}
+	.Continut span {
+    font-size: 10px;
+}
+}
+
+@media screen and (max-width: 450px)
+{
+  .progressbar li{
+    font-size:7px;
+  }
+
+	.menu{
+		font-size: 12px;
+	}
+}
+.add
+{
+	margin:5%;
+	margin-top: 7%;
+	text-align: center;
+	font-size: 26pt;
+	font-weight: bold;
+
+}
+#psdwr {
+	color:red;
+	font-weight: bold;
+	
+  }
+  #usrwr {
+	color:red;
+	font-weight: bold;
+	
+  }
+  
+  form .hidden{
+	display: none;
+	
+  
+  }
+  form .nou
+  {
+	display: block;
+	color:red;
+	padding: 2%;
+  }

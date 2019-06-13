@@ -3,12 +3,20 @@
 class Proiecte_studenti extends Controller {
 	
 	function index()
-	{
-		$view_proiecte = $this->loadView('proiecte_stud_view');
-		$model_proiecte= $this->loadModel('Proiecte_stud');
-		$profesori=$model_proiecte->getAllProfesor();
-		$view_proiecte->set('profesori',$profesori);
-		$view_proiecte->render();
+	{	
+		$help=$this->loadHelper('session_helper');
+		if( $help->get("id_student")!=NULL ) 
+		{
+			$view_proiecte = $this->loadView('proiecte_stud_view');
+			$model_proiecte= $this->loadModel('Proiecte_stud');
+			$profesori=$model_proiecte->getAllProfesor();
+			$view_proiecte->set('profesori',$profesori);
+			$view_proiecte->render();
+		}
+		else
+		{
+			$this->redirect("login");
+		}
 	}
 	function profesor()
 	{

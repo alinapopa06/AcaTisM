@@ -9,11 +9,11 @@
   <body>
     <nav class="menu">   
              <img id="fii" src="<?php echo BASE_URL; ?>static/images/fiialb.png" alt="fii"> 
-            <a href="<?php echo BASE_URL; ?>acatismprof.html" >Acasă</a>
+            <a href="<?php echo BASE_URL; ?>acatismprof" >Acasă</a>
             <a href="#" class="active">Proiecte</a>
-            <a href="<?php echo BASE_URL; ?>Etape_start.html"  >Etape</a>
-            <a href="<?php echo BASE_URL; ?>contact_profesori.html" >Contact</a>
-            <a href="html.html"  >Logout</a>
+            <a href="<?php echo BASE_URL; ?>Etape_profesori"  >Etape</a>
+            <a href="<?php echo BASE_URL; ?>contact_profesori" >Contact</a>
+            <a href="<?php echo BASE_URL; ?>logout">Logout</a>
             <img id="univ" src="<?php echo BASE_URL; ?>static/images/UNIV1.png" alt="univ">
     </nav>
 
@@ -39,6 +39,7 @@
                 
                     </ol>
           </div>
+          <form action="#" method="POST"><button class='new' name="add">ADD</button></form>
         </div>
         <div class="grid2">
           <div class="nume2">
@@ -47,11 +48,18 @@
           <div class="continut2">
                 <ul>
                     <?php
+                    if(isset($_POST['add']))
+                    {
+                        header("Location:".BASE_URL."AdaugaProiect");
+                    }
                     if(isset($_POST['accepta']))
                     {
                         $model=new Proiecte_model();
-                        print_r($_POST);
-                        //header("Location:".BASE_URL."proiecte");
+                        $student=$model->getInfo($_POST['cerere']);
+                        print_r($student);
+                        $model->adaugaProiect($student[0]['id_student'],$student[0]['id_proiect'],$_SESSION['id_profesor']);
+                        $model->stergeCerere($_POST['cerere']);
+                        header("Location:".BASE_URL."proiecte");
                     }
                     if(isset($_POST['refuza']))
                     {

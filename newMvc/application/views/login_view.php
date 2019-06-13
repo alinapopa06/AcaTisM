@@ -1,57 +1,5 @@
 <!-- <!DOCTYPE html> -->
-<?php
-require APP_DIR .'models/Login_model.php';
-//print_r($_POST);
 
-if(isset($_POST['submit']))
-{
-  
-
-  if(isset($_POST["name"]) && isset($_POST["password"]))
-  {
-    
-       $model= new Login_model();
-       $model->username=$_POST["name"];
-       $model->password=$_POST["password"];
-       $rez=$model->verificare();
-       if($rez['tip_utilizator']==1)
-       {
-
-         $_SESSION['admin']=$rez;
-         header("Location: http://localhost/Acatism/newMvc/Acatism");
-       }
-
-         else if($rez['tip_utilizator']==2)
-         {
-          
-          $sql="Select id from utilizatori where nume_utilizator='".$_POST["name"]."'" . "and tip_utilizator=2";
-          $user=$model->query($sql);
-          $_SESSION['prof']=$user[0]['id'];
-          header("Location: http://localhost/Acatism/newMvc/Acatismprof");
-         }
-
-        else  if($rez['tip_utilizator']==3)
-         {
-          $sql="Select id from utilizatori where nume_utilizator='".$_POST["name"]."'" . "and tip_utilizator=3";
-          $user=$model->query($sql);
-          $_SESSION['stud']=$user[0]['id'];
-          header("Location: http://localhost/Acatism/newMvc/Acatism");
-        }
-
-       
-       else
-         {
-         
-          $message = "Username and/or Password incorrect.\\nTry again.";
-          echo "<script type='text/javascript'>alert('.$message.');</script>";
-           
-         }
-        }
-
-  }
-
-   
-?>
 
 <html lang="en">
   <head>
@@ -76,20 +24,83 @@ if(isset($_POST['submit']))
               <div id="name">Username</div>
               <form method="post" action>  
               <input type="text" name="name" placeholder="Username">
-              <div id="pass">Password</div>
-              <input type="password" name="password" placeholder="Password">
-              
+              <div id="pass">Parola</div>
+              <input type="password" name="password" placeholder="Parola">
+              <div id="psdwr" class="hidden" >Parola gresita</div> 
+              <div id="usrwr" class="hidden" >Username-ul nu exista</div> 
   
           
               <button type="submit" name="submit">Login</button>
-
-              <label>
-                  <input type="checkbox" checked="checked" name="remember"> Remember me
-              </label>
-
               
               </form>
         </div>
+        <?php
+require APP_DIR .'models/Login_model.php';
+//print_r($_POST);
+
+if(isset($_POST['submit']))
+{
+  
+
+  if(isset($_POST["name"]) && isset($_POST["password"]))
+  {
     
+        $model= new Login_model();
+        $model->username=$_POST["name"];
+        $model->password=$_POST["password"];
+        $rez=$model->verificare();
+        if($rez['tip_utilizator']==1)
+        {
+
+          $_SESSION['admin']=$rez;
+          header("Location:".BASE_URL."admin");
+        }
+
+          else if($rez['tip_utilizator']==2)
+          {
+            
+            $sql="Select id from utilizatori where nume_utilizator='".$_POST["name"]."'" . "and tip_utilizator=2";
+            $user=$model->query($sql);
+            $_SESSION['id_profesor']=$user[0]['id'];
+            header("Location:".BASE_URL."Acatismprof");
+          }
+
+          else  if($rez['tip_utilizator']==3)
+          {
+            $sql="Select id from utilizatori where nume_utilizator='".$_POST["name"]."'" . "and tip_utilizator=3";
+            $user=$model->query($sql);
+            $_SESSION['id_student']=$user[0]['id'];
+            header("Location:".BASE_URL."Acatism");
+          }
+        else if($rez==-1)
+          {
+            echo "<script type='text/javascript'>
+            function error(){
+              var number=document.getElementById('psdwr');
+              number.classList.remove('hidden');
+              number.classList.add('nou');
+            }
+            error();
+            
+            </script>";
+          }
+          else if($rez==-2)
+          {
+            echo "<script type='text/javascript'>
+            function error(){
+              var number=document.getElementById('usrwr');
+              number.classList.remove('hidden');
+              number.classList.add('nou');
+            }
+            error();
+            
+            </script>";
+          }
+      }
+
+  }
+
+   
+?>
   </body>
   </html>

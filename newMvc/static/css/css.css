@@ -155,15 +155,25 @@ button:hover {
 
   
 }
-#upwrong {
+#psdwr {
   color:red;
   font-weight: bold;
-
-
+  
+}
+#usrwr {
+  color:red;
+  font-weight: bold;
+  
 }
 
-div .hidden{
+form .hidden{
   display: none;
   
 
+}
+form .nou
+{
+  display: block;
+  color:red;
+  padding: 2%;
 }

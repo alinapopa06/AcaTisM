@@ -33,7 +33,17 @@ class sendProject_model extends Model {
 		$sql="INSERT INTO `propuneri`( `id_profesor`, `nume_proiect`, `descriere`, `id_student`,`tip_proiect`) VALUES (".$id_prof.',"'.$nume_proiect.'","'.$descriere.'",'.$_SESSION['id_student'].",'".$tip_proiect."')";
 		$res=$this->execute($sql);
 	}
-
+	public function verify($id)
+	{
+		$id=$this->escapeString($id);
+		$sql="SELECT id_proiect from studenti where id_student='$id'";
+		$res=$this->query($sql);
+		if($res[0][0]==NULL) 
+		{
+			return true;
+		}
+		return false;
+	}
 }
 
 ?>

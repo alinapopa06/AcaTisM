@@ -27,21 +27,6 @@ class Model {
 	    return !!$val;
 	}
 	
-	public function to_date($val)
-	{
-	    return date('Y-m-d', $val);
-	}
-	
-	public function to_time($val)
-	{
-	    return date('H:i:s', $val);
-	}
-	
-	public function to_datetime($val)
-	{
-	    return date('Y-m-d H:i:s', $val);
-	}
-	
 	public function query($qry)
 	{
 		$result = mysqli_query($this->connection,$qry) or die('MySQL Error: '. mysql_error());
@@ -54,7 +39,7 @@ class Model {
 
 	public function execute($qry)
 	{
-		$exec = mysql_query($qry) or die('MySQL Error: '. mysql_error());
+		$exec = mysqli_query($this->connection,$qry) or die('MySQL Error: '. mysql_error());
 		return $exec;
 	}
     

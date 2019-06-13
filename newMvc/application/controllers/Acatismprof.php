@@ -7,7 +7,7 @@ class Acatismprof extends Controller {
 		$template = $this->loadView('acatismprof_view');
 		$help=$this->loadHelper('session_helper');
 		//print_r($_SESSION['prof']);
-		 if( $help->get("prof")!=NULL ) 
+		 if( $help->get("id_profesor")!=NULL ) 
 		{
 			
 			$template->render();

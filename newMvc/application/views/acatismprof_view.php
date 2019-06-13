@@ -21,10 +21,10 @@
 
      
                 
-                <a href="acatismprof.html" class="active" >Acasa</a>
-                <a href="proiecte_profesori.html" >Proiecte</a>
-                <a href="Etape_start.html" >Etape</a>
-                <a href="Contact.html" >Contact</a>
+                <a href="<?php echo BASE_URL; ?>acatismprof" class="active" >Acasa</a>
+                <a href="<?php echo BASE_URL; ?>proiecte" >Proiecte</a>
+                <a href="<?php echo BASE_URL; ?>etape_profesori" >Etape</a>
+                <a href="<?php echo BASE_URL; ?>Contact" >Contact</a>
                 <a href="<?php echo BASE_URL."Logout"; ?>">Logout</a>
                 <img id="univ" src="<?php echo BASE_URL; ?>static/images/UNIV1.png" alt="UNIV">
     </nav>
@@ -41,7 +41,7 @@
    <div class="continutgeneral">
 
        <div class="buttons">
-            <a href="structurasemestruprof.html" class="firstbutton">Structura anului universitar 2018-2019</a>
+            <a href="structura" class="firstbutton">Structura anului universitar 2018-2019</a>
             <a href="https://webmail-studs.info.uaic.ro/" class="fourthbutton">WEBMAIL-Profesori</a>
 
          </div>

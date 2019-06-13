@@ -22,10 +22,10 @@ $obj->propunere($_POST['id_profesor'],$_SESSION['id_student'],$_POST['descriere'
     <nav class="menu">   
              <img id="fii" src="<?php echo BASE_URL; ?>static/images/fiialb.png" alt="fii"> 
             <a href="<?php echo BASE_URL; ?>acatism" >Acasă</a>
-            <a href="#" class="active">Proiecte</a>
-            <a href="<?php echo BASE_URL; ?>Etape_studenti"  >Etape</a>
-            <a href="<?php echo BASE_URL; ?>Contact" >Contact</a>
-            <a href="<?php echo BASE_URL; ?>html"  >Logout</a>
+            <a href="" class="active">Proiecte</a>
+            <a href="<?php echo BASE_URL; ?>etape_studenti"  >Etape</a>
+            <a href="<?php echo BASE_URL; ?>contact" >Contact</a>
+            <a href="<?php echo BASE_URL; ?>logout"  >Logout</a>
             <img id="univ" src="<?php echo BASE_URL; ?>static/images/UNIV1.png" alt="univ">
     </nav>
 
@@ -77,9 +77,16 @@ $obj->propunere($_POST['id_profesor'],$_SESSION['id_student'],$_POST['descriere'
                         if(isset($_POST['aplica']))
                         {
                                 $obj= new sendproject_model();
-                                $res=$obj->send($_POST['prof_id'],$_POST['proiect_id'],$_SESSION['id_student']);
-                                if($res==1) echo "<script>alert('Ai aplicat cu succes la acest proiect.\\n Urmeaza ca profesorul sa evalueze cererea ta');</script>";
-                                else echo "<script>alert('Ai aplicat deja la acest proiect');</script>";
+                                if($obj->verify($_SESSION['id_student'])==false)
+                                {
+                                        echo "<script>alert('Ai deja asignat un proiect si un profesor');</script>";
+                                }
+                                else
+                                {
+                                        $res=$obj->send($_POST['prof_id'],$_POST['proiect_id'],$_SESSION['id_student']);
+                                        if($res==1) echo "<script>alert('Ai aplicat cu succes la acest proiect.\\n Urmeaza ca profesorul sa evalueze cererea ta');</script>";
+                                        else echo "<script>alert('Ai aplicat deja la acest proiect');</script>";
+                                }
                         }
                         if(!isset($eroare))
                         {

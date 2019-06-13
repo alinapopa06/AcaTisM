@@ -1,13 +1,13 @@
 <?php
 
-class Etape_studenti extends Controller {
+class structura extends Controller {
 	
 	function index()
 	{
 		$help=$this->loadHelper('session_helper');
-		if($help->get("id_student")!=NULL)
+		if($help->get("id_profesor")!=NULL)
 		{
-			$template = $this->loadView('etape_stud_view');
+			$template = $this->loadView('structurasemetruprof_view');
 			$template->render();
 		}
 		else

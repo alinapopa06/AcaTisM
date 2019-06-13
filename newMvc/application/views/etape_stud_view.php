@@ -11,11 +11,11 @@
           <div id="siglafii">
             <img id="fii" src="<?php echo BASE_URL; ?>static/images/fiialb.png" alt="fii">
           </div>
-                 <a href="acatism" >Acasa</a>
-                <a href="proiecte_studenti" >Proiecte</a>
-                <a href="Etape_start" class="active" >Etape</a>
-                <a href="Contact" >Contact</a>
-                <a href="<?php echo BASE_URL."Logout"; ?>">Logout</a>
+                 <a href="<?php echo BASE_URL?>acatism" >Acasa</a>
+                <a href="<?php echo BASE_URL?>proiecte_studenti" >Proiecte</a>
+                <a href="<?php echo BASE_URL?>etape_studenti" class="active" >Etape</a>
+                <a href="<?php echo BASE_URL?>contact" >Contact</a>
+                <a href="<?php echo BASE_URL?>logout">Logout</a>
            <div id="siglauniv">
             <img id="univ" src="<?php echo BASE_URL; ?>static/images/UNIV1.png" alt="universitate">
           </div>

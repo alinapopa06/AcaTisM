@@ -22,11 +22,6 @@ class Controller {
 		return $error;
 	}
 	
-	public function loadPlugin($name)
-	{
-		require(APP_DIR .'plugins/'. strtolower($name) .'.php');
-	}
-	
 	public function loadHelper($name)
 	{
 		require(APP_DIR .'helpers/'. strtolower($name) .'.php');
