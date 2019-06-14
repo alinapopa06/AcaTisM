@@ -16,7 +16,7 @@
       <dl>
         <dt>Membrii echipei</dt>
         <dd>
-          Dumitrescu Malina, Popa Alina, Bolota Stefan, Cristea Rares-Andrei.
+          Dumitrescu Malina, Bolota Stefan.
         </dd>
         <dt>Profesor indrumator</dt>
         <dd>
@@ -31,9 +31,7 @@
          In aceasta aplicatie profesorii au posibilitatea gestionarii temelor propuse si a studentilor arondati,
           inclusiv crearea unei planificari a celor mai importante etape pana la momentul sustinerii.
            Pentru studenti, aplicatia va fi capabia sa listeze/filtreze subiectele de interes pentru fiecare profesor
-            in parte si va permite inscrierae unei persoane in vederea indrumarii, eventual conform unor cerinte prealabile.
-             Sistemul verifica indeplinirea cerintelor si va notifica via flux Atom sau prin e-mail profesorul/studentul atunci
-              cand survin intarzieri in efectuarea unor activitati sau daca apar apar actualizari. De asemenea, aplicatia va 
+            in parte si va permite inscrierea unei persoane in vederea indrumarii. De asemenea, aplicatia va 
               semnala posibile probleme privind variantele intermediare ale documentelor intocmite de student referitoare la 
               format sau standarde de redactare. Progresul implementarii tezei poate fi monitorizat automat prin intermermediul
                unui sistem online de management de cod-sursa Github.
@@ -49,6 +47,8 @@
         <h3>Pagina Login</h3>
         <p>
           Ofera utilizatorilor posibilitatea de login care este necesar pentru a putea accesa facilitatile aplicatiei.
+          Exista trei tipuri de utilizatori, studenti, profesori si un
+        admin. Conturile sunt prestabilite, adminul avand acceasta responsabilitatea sa introduca noi utilizatori atunci cand este nevoie.
         </p>
       </section>
       <section id="home">
@@ -67,7 +67,7 @@
         <h3>Pagina Proiecte</h3>
         <p>
 Din perspectiva unui student, acesta va putea vizualiza toate proiectele propuse de profesori si va permite
- inscrierea unei persoane in vederea indrumarii conform unor cerinte. De asemenea, acestia pot propune un 
+ inscrierea unei persoane in vederea indrumarii. De asemenea, acestia pot propune un 
  subiect ca proiect de licenta/master.
 <br>
 <br>  
@@ -83,17 +83,16 @@ Din perspectiva unui student, acesta va putea vizualiza toate proiectele propuse
           In aceasta pagina se va putea urmari progresul proiectului.
          <br>
          <br>
-          Studentul va putea vizualiza etapele propuse de catre profesor si va putea adauga comentarii la o anumita etapa sau va putea schimba statusul etapei. In urma acestei actiuni profesorul va fi notificat de schimbarile facute prin email cat si in interiorul aplicatie.
+          Studentul va putea vizualiza etapele propuse de catre profesor si va putea schimba statusul etapei. 
           <br>
           <br>
-          Profesorul va putea vedea toti studentii arondati lui si etapele fiecarui proiect în parte. Profesorul poate adauga/edita etape, poate seta deadline-ul fiecarei etape sau poate vizualiza progresul proiectului prin GitHub. Studentul va fi notificat de schimbarile facute de profesor pentru a putea fi la curent cu noile cerinte.
+          Profesorul va putea vedea toti studentii arondati lui si etapele fiecarui proiect în parte. Profesorul poate adauga/edita etape, poate seta deadline-ul fiecarei etape sau poate vizualiza progresul proiectului prin GitHub.
           </p>
         </section>
          <section id="etape">
         <h3>Pagina Contact</h3>
         <p>
-        Din perspectiva unui student, acesta va putea vizualiza tabele cu toti profesorii sau dupa un anumit
-	  filtru. In tabelel respective avem informatii despre materiile de interes, cabinetul in care-l putem gasi pe respectivul indrumator, e-mail-ul lui si pagina lui personala.
+        Din perspectiva unui student, acesta va putea vizualiza tabele cu toti profesorii. In tabelele respective avem informatii despre materiile de interes, cabinetul in care-l putem gasi pe respectivul indrumator, e-mail-ul lui si pagina lui personala.
 	  <br>
 	  <br>  
 	   Din perspectiva unui profesor, acesta va putea vizualiza informatii despre studentii pe care ii indruma. 
@@ -109,7 +108,7 @@ Din perspectiva unui student, acesta va putea vizualiza toate proiectele propuse
           <li> 	PHP </li>
           <li> 	MySql </li>
           <li> 	HTML si CSS pentru partea de front-end </li>
-           <li> JavaScript </li>
+          
           </ul> <p>
         </section>
 
@@ -120,27 +119,16 @@ Din perspectiva unui student, acesta va putea vizualiza toate proiectele propuse
        	<ul>
        		<li>Gestionarea bazei de date</li>
        		<li>Integrare GitHub</li>
-       		<li>Implementare functie admin</li>
+           <li>Implementare functie admin</li>
+           <li>Pagina de proiecte</li>
+
        </section> 
         <section id="etape"><h3>Dumitrescu Malina</h3></section>
         <ul>
-        	<li>Notificare prin atom</li>
+        	<li>Login</li>
         	<li>Pagina de etape</li>
-        	<li>Parsare xml pentru pagina de acasa</li>
         </ul>
-        <section id="etape"><h3>Popa Alina-Mihaela</h3></section>
-        <ul>
-        	<li>Cerintele profesorilor si formular pentru acestea</li>
-        	<li>Filtrarea proiectelor</li>
-        	<li>Propunerea proiectelor</li>
-        </ul>
-        <section id="etape"><h3>Cristea Rares </h3></section>
-        <ul>
-        	<li>Notificari prin e-mail</li>
-        	<li>Pagina de login</li>
-        	<li>Pagina de etape</li>
-        	<li>Pagina de contact</li>
-      </section>
+       
       <section id="use-case">
         <h3>Diagrame use case</h3>
         <br>
